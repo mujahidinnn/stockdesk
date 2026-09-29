@@ -83,7 +83,7 @@
     --popover-foreground: 240 5% 96%;
 
     --primary: 210 90% 60%;
-    --primary-foreground: 222 47% 11%;
+    --primary-foreground: 0 0% 100%;
     --accent-2: 199 89% 58%;
     --sea: 210 90% 60%;
 
@@ -113,7 +113,7 @@
     --sidebar-background: 240 6% 6%;
     --sidebar-foreground: 240 5% 80%;
     --sidebar-primary: 210 90% 60%;
-    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 4% 12%;
     --sidebar-accent-foreground: 240 5% 96%;
     --sidebar-border: 240 4% 12%;
