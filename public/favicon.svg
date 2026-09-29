@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Pointy-top hexagon, the logo's own outline; the round stroke softens its corners. -->
+  <path d="M32 6.5L54.1 19.25V44.75L32 57.5L9.9 44.75V19.25Z" fill="#1273e2" stroke="#1273e2" stroke-width="12" stroke-linejoin="round"/>
+  <g transform="translate(15.2 15.2) scale(1.4)" fill="none" stroke="#fff"
+     stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 2.6L20.6 7.3V16.7L12 21.4L3.4 16.7V7.3Z"/>
+    <path d="M3.4 7.3L12 12L20.6 7.3M12 12V21.4"/>
+  </g>
+</svg>

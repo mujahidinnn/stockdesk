@@ -1,0 +1,45 @@
+project_id = "eltyripfvutqfwsruqux"
+
+# Every function verifies the caller's JWT. seed-admin is the exception: it
+# bootstraps the first Admin before any account exists, so it is guarded by
+# the SEED_ADMIN_SECRET header instead and refuses outright when that secret
+# is not configured.
+[functions.create-user]
+verify_jwt = true
+
+[functions.delete-user]
+verify_jwt = true
+
+[functions.reactivate-user]
+verify_jwt = true
+
+[functions.seed-admin]
+verify_jwt = false
+
+[functions.api-v1]
+verify_jwt = false
+
+[functions.webhook-dispatch]
+verify_jwt = false
+
+# Accounts are only created by an Admin (create-user) or seed-admin. Google
+# sign-in only reaches accounts that already exist; a stray one still gets a
+# profile without a role (handle_new_user), so it reaches nothing.
+[auth]
+site_url = "https://stockdesk.mujahidin.my.id"
+additional_redirect_urls = ["http://localhost:8080"]
+enable_signup = false
+minimum_password_length = 8
+password_requirements = "lower_upper_letters_digits"
+
+# This switch turns the whole email provider on or off (login included), not
+# just email sign-ups; sign-ups are already closed by [auth] enable_signup.
+[auth.email]
+enable_signup = true
+
+[auth.external.google]
+enabled = true
+# The client ID is public; the secret stays in the env (or is set in the Dashboard).
+client_id = "568573620932-59gasi91qnmqp1bi46i6f323tgbk0i9u.apps.googleusercontent.com"
+secret = "env(SUPABASE_AUTH_EXTERNAL_GOOGLE_SECRET)"
+skip_nonce_check = false

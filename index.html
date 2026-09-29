@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- maximum-scale stops iOS Safari auto-zooming into sub-16px fields;
+         iOS still allows pinch-zoom regardless. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <title>StockDesk · Inventory & Warehouse Management</title>
+    <meta
+      name="description"
+      content="StockDesk: multi-warehouse inventory, bin-level WMS, FEFO picking, stock opname and FIFO/average valuation in one place."
+    />
+    <link rel="canonical" href="https://stockdesk.mujahidin.my.id/" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="StockDesk" />
+    <meta property="og:title" content="StockDesk · Inventory & Warehouse Management" />
+    <meta property="og:description" content="Multi-warehouse inventory, bin-level WMS, FEFO picking, stock opname and FIFO/average valuation in one place." />
+    <meta property="og:url" content="https://stockdesk.mujahidin.my.id/" />
+    <meta property="og:image" content="https://stockdesk.mujahidin.my.id/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="StockDesk dashboard with stock value, inbound vs outbound and a map of the warehouse network" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="StockDesk · Inventory & Warehouse Management" />
+    <meta name="twitter:description" content="Multi-warehouse inventory, bin-level WMS, FEFO picking, stock opname and FIFO/average valuation in one place." />
+    <meta name="twitter:image" content="https://stockdesk.mujahidin.my.id/og.png" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- No-flash theme script: apply saved theme before first paint -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          if (
+            t === "dark" ||
+            (t !== "light" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches)
+          ) {
+            document.documentElement.classList.add("dark");
+          }
+        } catch (e) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
+    <!-- Logo draw loop, shared by the splash and <LogoMark animated>. Paths use
+         pathLength=1; offset ±1.1 (not ±1) so a zero-length dash leaves no round-cap dot. -->
+    <style>
+      .logo-draw-wave,
+      .logo-draw-arrow,
+      .logo-draw-text { animation: 3.2s ease-in-out infinite both; }
+      .logo-draw-wave,
+      .logo-draw-arrow { stroke-dasharray: 1 2; }
+      .logo-draw-wave { animation-name: logo-draw-wave; }
+      .logo-draw-arrow { animation-name: logo-draw-arrow; }
+      .logo-draw-text { animation-name: logo-draw-text; }
+      @keyframes logo-draw-wave {
+        0% { stroke-dashoffset: 1.1; }
+        35%, 75% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1.1; }
+      }
+      @keyframes logo-draw-arrow {
+        0%, 27% { stroke-dashoffset: 1.1; }
+        42%, 88% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: -1.1; }
+      }
+      @keyframes logo-draw-text {
+        0%, 42% { opacity: 0; transform: translateY(4px); }
+        50%, 75% { opacity: 1; transform: none; }
+        83%, 100% { opacity: 0; transform: none; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .logo-draw-wave,
+        .logo-draw-arrow,
+        .logo-draw-text { animation: none; stroke-dasharray: none; }
+      }
+      #splash {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+        background: hsl(240 5% 97.5%);
+        color: hsl(212 85% 48%);
+      }
+      #splash p {
+        margin: 0;
+        font: 600 14px Inter, system-ui, sans-serif;
+        color: hsl(240 10% 10%);
+      }
+      html.dark #splash {
+        background: hsl(240 6% 4%);
+        color: hsl(210 90% 60%);
+      }
+      html.dark #splash p { color: hsl(240 5% 96%); }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="splash" role="status" aria-label="Loading StockDesk">
+        <svg viewBox="0 0 24 24" height="40" aria-hidden="true">
+          <mask id="splash-box">
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#fff" stroke-width="3.2">
+              <path class="logo-draw-wave" pathLength="1" d="M12 2.6L20.6 7.3V16.7L12 21.4L3.4 16.7V7.3Z" />
+              <path class="logo-draw-arrow" pathLength="1" d="M3.4 7.3L12 12L20.6 7.3M12 12V21.4" />
+            </g>
+            <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke="#000" stroke-width="1.1">
+              <path class="logo-draw-wave" pathLength="1" d="M12 2.6L20.6 7.3V16.7L12 21.4L3.4 16.7V7.3Z" />
+              <path class="logo-draw-arrow" pathLength="1" d="M3.4 7.3L12 12L20.6 7.3M12 12V21.4" />
+            </g>
+          </mask>
+          <rect width="100%" height="100%" fill="currentColor" mask="url(#splash-box)" />
+        </svg>
+        <p class="logo-draw-text">StockDesk</p>
+      </div>
+    </div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

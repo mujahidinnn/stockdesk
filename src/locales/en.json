@@ -1,0 +1,1689 @@
+{
+  "app": {
+    "name": "StockDesk",
+    "tagline": "Inventory & WMS",
+    "version": "v0.1.0 · 2026",
+    "footer": "Warehouse Management System"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Overview",
+      "masterData": "Master Data",
+      "inbound": "Inbound",
+      "outbound": "Outbound",
+      "stockControl": "Stock Control",
+      "finance": "Finance & Settings",
+      "help": "Help"
+    },
+    "items": {
+      "dashboard": "Dashboard",
+      "products": "Products & SKU",
+      "warehouses": "Warehouses & Bins",
+      "goodsReceipt": "Goods Receipt",
+      "putaway": "Putaway",
+      "pickList": "Pick Lists",
+      "dispatch": "Packing & Dispatch",
+      "transfer": "Stock Transfer",
+      "opname": "Stock Opname",
+      "audit": "Movement Log",
+      "valuation": "Valuation",
+      "export": "Export",
+      "integration": "Integration & Users",
+      "superadmin": "Superadmin",
+      "guide": "Guide"
+    },
+    "descriptions": {
+      "dashboard": "Stock value, alerts and movement at a glance",
+      "products": "Items, variants, units and labels",
+      "warehouses": "Zones, aisles, racks and bin layout",
+      "goodsReceipt": "Receive, QC and record batches",
+      "putaway": "Move received stock into bins",
+      "pickList": "FEFO picking on the shortest route",
+      "dispatch": "Verify, pack and ship orders",
+      "transfer": "Bin-to-bin and inter-warehouse moves",
+      "opname": "Physical count with approval",
+      "audit": "Immutable stock ledger and stock card",
+      "valuation": "FIFO / average value and COGS",
+      "export": "Reports to Excel and PDF",
+      "integration": "API keys, webhooks, users and access",
+      "superadmin": "System monitor and demo data",
+      "guide": "How each menu works"
+    },
+    "collapse": "Collapse menu",
+    "expand": "Expand menu",
+    "openMenu": "Open menu"
+  },
+  "commandPalette": {
+    "placeholder": "Search pages and actions...",
+    "empty": "No results found",
+    "navigateGroup": "Go to",
+    "actionsGroup": "Actions",
+    "toggleTheme": "Toggle light / dark theme",
+    "profileSettings": "Profile settings",
+    "signOut": "Sign out"
+  },
+  "deleteModal": {
+    "cancel": "Cancel",
+    "confirm": "Delete",
+    "deleting": "Deleting..."
+  },
+  "profile": {
+    "title": "Profile Settings",
+    "subtitle": "Manage your account & security",
+    "changePhoto": "Change Photo",
+    "uploading": "Uploading...",
+    "accountInfo": {
+      "title": "Account Information",
+      "description": "Your current account details. Role can only be changed by an Admin."
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "description": "Update your display name shown across the dashboard."
+    },
+    "language": {
+      "title": "Language",
+      "description": "Choose your preferred display language. Takes effect immediately.",
+      "label": "Language",
+      "english": "English",
+      "indonesian": "Indonesia"
+    },
+    "security": {
+      "title": "Change Password",
+      "description": "Set a new password for your account. Must be at least 8 characters.",
+      "currentPassword": "Current Password",
+      "currentPasswordWrong": "That current password is not right",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm Password",
+      "repeatPassword": "Repeat new password",
+      "passwordMismatch": "Passwords do not match",
+      "updatePassword": "Update Password",
+      "updating": "Updating..."
+    },
+    "fields": {
+      "email": "Email",
+      "role": "Role",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Your full name",
+      "phoneNumber": "Phone Number",
+      "phoneNumberPlaceholder": "e.g. +62 812 3456 7890"
+    },
+    "actions": {
+      "saveChanges": "Save Changes",
+      "saving": "Saving...",
+      "updated": "Profile updated successfully",
+      "avatarUpdated": "Avatar updated",
+      "passwordUpdated": "Password changed successfully",
+      "languageUpdated": "Language updated"
+    },
+    "email": {
+      "title": "Email Address",
+      "description": "Update your login email. Confirmation links will be sent to both addresses before the change takes effect.",
+      "newEmail": "New Email Address",
+      "newEmailPlaceholder": "your@email.com",
+      "currentEmail": "Current email",
+      "updateEmail": "Update Email",
+      "updating": "Sending...",
+      "pendingTitle": "Email Change Pending",
+      "pendingDesc": "Confirmation links were sent to {{email}} and your current address. Check both inboxes.",
+      "cancelChange": "Cancel",
+      "confirmationSent": "Confirmation links sent to both email addresses.",
+      "invalidFormat": "Please enter a valid email address.",
+      "alreadyInUse": "This email is already associated with another account.",
+      "rateLimited": "Too many requests. Please try again later.",
+      "cancelSuccess": "Email change cancelled."
+    }
+  },
+  "shell": {
+    "profileSettings": "Profile Settings",
+    "signOut": "Sign Out",
+    "administrator": "Administrator",
+    "theme": "Theme",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeSystem": "System",
+    "signOutConfirm": {
+      "title": "Sign out?",
+      "desc": "You'll need to sign in again to access StockDesk."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "markAllRead": "Mark all read",
+    "soundOn": "Unmute sound",
+    "soundOff": "Mute sound",
+    "empty": "No notifications yet",
+    "emptyHint": "You'll see updates here when something needs your attention"
+  },
+  "login": {
+    "tagline": "Sign in to continue",
+    "continueWithGoogle": "Continue with Google",
+    "redirecting": "Redirecting...",
+    "orEmail": "or continue with email",
+    "email": "Email",
+    "password": "Password",
+    "signIn": "Sign In",
+    "signingIn": "Signing in...",
+    "forgotPassword": "Forgot password?",
+    "errors": {
+      "invalidCredentials": "Invalid email or password.",
+      "authServiceError": "Authentication service error. Please try again in a moment.",
+      "googleNotConfigured": "Google sign-in is not yet configured. Please use email & password."
+    },
+    "welcome": "Welcome back!",
+    "heroTitle": "Every unit counted,\nevery bin in control.",
+    "heroBody": "Receive, store, pick and ship with every unit accounted for, across every warehouse and bin.",
+    "demoTitle": "Demo accounts",
+    "demoHint": "Pick a role to fill in the email and password (Demo123!).",
+    "demoRoles": {
+      "admin": "Admin",
+      "manager": "Warehouse manager",
+      "worker": "Warehouse worker"
+    },
+    "brandTagline": "Your stock, all in one desk."
+  },
+  "resetPassword": {
+    "title": "Set a new password",
+    "subtitle": "Pick something you have not used before",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "save": "Save password",
+    "saving": "Saving...",
+    "success": "Password updated. Taking you in...",
+    "mismatch": "The two passwords do not match",
+    "tooShort": "Password must be at least {{count}} characters",
+    "linkExpired": "This reset link is no longer valid. Request a new one from the login page.",
+    "backToLogin": "Back to login"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "active": "Active",
+    "inactive": "Inactive",
+    "task_one": "task",
+    "task_other": "tasks",
+    "required": "Required",
+    "export": "Export",
+    "noResults": "No results found",
+    "pickDate": "Pick a date",
+    "clearDate": "Clear date",
+    "pickTime": "Pick a time",
+    "pagination": {
+      "range": "{{from}}–{{to}} of {{total}}",
+      "page": "Page {{page}} of {{pageCount}}"
+    },
+    "detail": "Detail",
+    "submittedAt": "Submitted",
+    "jobTitle": "Job title",
+    "errorTitle": "Something broke",
+    "errorBody": "This page could not be displayed. Reloading usually fixes it.",
+    "reload": "Reload",
+    "add": "Add",
+    "allStatus": "All statuses",
+    "deleted": "Deleted",
+    "inUse": "Still used elsewhere; deactivate it instead.",
+    "saved": "Saved",
+    "search": "Search...",
+    "status": "Status",
+    "errors": {
+      "forbidden": "You don't have permission for this.",
+      "duplicate": "That already exists.",
+      "invalid": "Some values are not valid.",
+      "sessionExpired": "Your session expired. Sign in again.",
+      "network": "Cannot reach the server. Check your connection and try again.",
+      "unexpected": "Something went wrong. Please try again.",
+      "loadFailed": "Couldn't load data: {{reason}}"
+    },
+    "retry": "Retry",
+    "clearSearch": "Clear search"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "message": "The page you're looking for doesn't exist.",
+      "back": "Back to Dashboard"
+    },
+    "forbidden": {
+      "badge": "403 Forbidden",
+      "title": "Access Denied",
+      "message": "You don't have permission to view this page. Contact your administrator to request access.",
+      "goBack": "Go Back",
+      "dashboard": "Dashboard"
+    }
+  },
+  "guide": {
+    "defaultName": "there",
+    "welcomeTitle": "Welcome, {{name}}",
+    "welcomeSubtitle": "Here's what you can do in StockDesk - pick a feature to jump straight to it",
+    "open": "Open",
+    "purposeLabel": "What it's for",
+    "flowLabel": "How it works",
+    "stepsLabel": "How to use it",
+    "noteLabel": "Note",
+    "extra": {
+      "profileLabel": "Profile Settings",
+      "profileDesc": "Update account info, language, and password",
+      "notificationsLabel": "Notifications",
+      "notificationsDesc": "See low-stock alerts and approvals that need you",
+      "themeLabel": "Switch Theme",
+      "themeDesc": "Toggle between light and dark mode",
+      "logoutLabel": "Account Menu & Sign Out",
+      "logoutDesc": "Open profile settings or sign out of your account"
+    },
+    "features": {
+      "profile": {
+        "purpose": "Manage your own account info: name, photo, email, app language, and password.",
+        "flow": "Everything here only affects your own account, never anyone else's.",
+        "steps": [
+          "Open it from the profile menu in the top-right corner (click your name/avatar).",
+          "Update your name or profile photo under \"Personal Info\".",
+          "Switch the app language (Indonesian/English) under \"Language\".",
+          "Update your password under \"Security\" if needed."
+        ],
+        "note": "Your role can only be changed by an Admin, never by yourself."
+      },
+      "notifications": {
+        "purpose": "Real-time alerts for things you need to know, like stock falling below its reorder point or a count waiting for approval.",
+        "flow": "The bell icon shows a red count when there are unread notifications.",
+        "steps": [
+          "Click the bell icon to see the notification list.",
+          "Click a notification to jump straight to the related page.",
+          "Mark everything read once the list gets full."
+        ],
+        "note": "Notifications appear automatically; nobody has to send them by hand."
+      },
+      "theme": {
+        "purpose": "Switches the app's appearance between light, dark, or your system setting.",
+        "flow": "Your theme choice is saved in the browser, so it stays the same next time you open the app.",
+        "steps": [
+          "Open the user menu (your avatar, top-right) and pick Light, Dark, or System."
+        ],
+        "note": "This setting only applies to the device/browser you're currently using."
+      },
+      "logout": {
+        "purpose": "The menu for opening profile settings or signing out of your account.",
+        "flow": "Click your name/avatar in the top-right corner to open it.",
+        "steps": [
+          "Click your name/avatar in the top-right corner.",
+          "Pick \"Profile Settings\" to update your account info.",
+          "Pick \"Sign Out\" to log out - you'll get a confirmation before it actually signs you out."
+        ],
+        "note": "You'll need to log in again after signing out to use the app."
+      },
+      "master-product": {
+        "purpose": "Every item you stock: parent products, SKU variants, units, owners, suppliers and customers.",
+        "flow": "A product has one or more SKUs. Stock is always recorded in the SKU base unit; other units (Pack, Box) are conversions.",
+        "steps": [
+          "Fill in Categories, Units and Owners on their tabs first.",
+          "Click \"New product\", enter a code and name, then write the variant attributes (e.g. color: Black, Grey; size: M, L).",
+          "Untick combinations you do not sell, then save.",
+          "Open a SKU to add its barcode and packaging units (Box = 144 Pcs).",
+          "Tick SKUs and use \"Print labels\" for barcode or QR labels."
+        ],
+        "note": "The base unit cannot change once the SKU exists, because all stock is recorded in it."
+      },
+      "master-warehouse": {
+        "purpose": "The warehouse layout: zones, aisles, racks and the bins goods live in.",
+        "flow": "Each warehouse gets receiving, staging, quarantine and transit bins automatically. Storage bins come from the generator or one at a time.",
+        "steps": [
+          "Create a warehouse; its code prefixes every location.",
+          "Use the grid icon to generate bins in bulk, e.g. aisles 01-04, 10 racks, levels A-D.",
+          "Pick a zone or aisle to see its bin grid; the color shows how full each bin is.",
+          "Edit a bin to set capacity, allowed categories and pick order.",
+          "Pick a location and print QR labels for the racks."
+        ],
+        "note": "The warehouse code is locked once created because it is part of every location code."
+      },
+      "goods-receipt": {
+        "purpose": "Record goods that arrive: from suppliers, production or returns, with QC results and batches.",
+        "flow": "A draft can change any time. On posting, goods that pass QC go to the receiving bin, rejects to quarantine, and putaway tasks are created.",
+        "steps": [
+          "Click \"New receipt\", pick the warehouse, source, supplier and goods owner.",
+          "Scan item barcodes to add lines; scan again to add quantity.",
+          "Enter any QC failures with a reason, plus batch and expiry when asked.",
+          "Save the draft or \"Post to stock\" right away.",
+          "Open a receipt to attach photos, for example damaged packaging."
+        ],
+        "note": "Purchase prices are only visible to, and entered by, Managers and Admin/Finance."
+      },
+      "putaway": {
+        "purpose": "Move goods from the receiving dock into storage bins.",
+        "flow": "Each posted receipt line becomes a task. Suggested bins: one already holding the same SKU and batch, then an empty bin for the category, then the nearest one.",
+        "steps": [
+          "Scan an item or tap a task in the list.",
+          "Pick a suggested bin, or scan another bin QR label.",
+          "Change the quantity to split goods over several bins.",
+          "Tap \"Put away here\"."
+        ],
+        "note": "Full bins and bins reserved for another category are refused."
+      },
+      "pick-list": {
+        "purpose": "Turn sales orders into pick lists on the shortest walk.",
+        "flow": "Stock is allocated FEFO (earliest expiry first, expired skipped) or FIFO, then reserved so no other order can promise it. The walk zig-zags through the aisles.",
+        "steps": [
+          "Create a sales order or receive one from POS/marketplace.",
+          "Tick orders from one warehouse and \"Build pick list\".",
+          "The picker opens it on a phone and scans the bin label, then the item, at each stop.",
+          "If less is on the shelf, enter the real quantity and why."
+        ],
+        "note": "A short order stays open so the rest can be allocated later."
+      },
+      "dispatch": {
+        "purpose": "Check, pack and hand goods to the courier.",
+        "flow": "Picked orders wait in staging. Packing needs every item scanned; stock only leaves when the parcel is dispatched.",
+        "steps": [
+          "Open \"To pack\" and choose an order.",
+          "Scan every item; anything not in the order, or one too many, is refused.",
+          "Enter weight, parcels and size, then \"Finish packing\".",
+          "On \"To dispatch\", enter the courier and tracking number and \"Dispatch\"; the delivery order opens for printing."
+        ],
+        "note": "COGS is booked automatically on dispatch."
+      },
+      "stock-transfer": {
+        "purpose": "Move stock between bins in one warehouse, or ship it to another warehouse.",
+        "flow": "Bin moves finish at once. Between warehouses: draft, send (stock goes to the transit bin), then the destination receives. Any shortfall is held until another manager decides.",
+        "steps": [
+          "Bin move: scan the source bin, pick the item, enter a quantity, scan the destination bin.",
+          "Between warehouses: a manager drafts and presses \"Send\".",
+          "At the destination, press \"Receive\" and enter what actually arrived, with a reason if short.",
+          "Another manager decides the shortfall: write off or keep in transit."
+        ],
+        "note": "Warehouse workers can move bin to bin; warehouse transfers are made by managers."
+      },
+      "stock-opname": {
+        "purpose": "Count physical stock and correct the system with a manager's approval.",
+        "flow": "Starting a count records system quantities and locks the bins. Counters work without seeing system quantities (blind count). A manager sees the variances and their value, then approves or rejects.",
+        "steps": [
+          "Create a count: warehouse, locations or category.",
+          "Press \"Start counting\".",
+          "Scan each bin, enter the quantity per item, scan unexpected items.",
+          "Submit once every line is counted.",
+          "Another manager approves; stock is adjusted automatically."
+        ],
+        "note": "Whoever submits a count cannot approve it."
+      },
+      "stock-audit": {
+        "purpose": "Trace every stock move and every master data change.",
+        "flow": "Movements cannot be edited or deleted by anyone. The stock card shows the opening balance, ins, outs and running balance per SKU.",
+        "steps": [
+          "Pick a date range, SKU, type or document number.",
+          "Open \"Stock card\" and pick a SKU for its running balance.",
+          "\"Master audit\" shows who changed products, locations, access and more."
+        ],
+        "note": "The warehouse filter in the header applies here too."
+      },
+      "dashboard": {
+        "purpose": "The state of the warehouse on one screen.",
+        "flow": "Every number comes from one database call. Money only shows for people with valuation access.",
+        "steps": [
+          "Pick a warehouse in the header to narrow the numbers.",
+          "Click a card to jump to its page.",
+          "Check critical stock and expiring batches every morning."
+        ],
+        "note": "The value trend fills from daily snapshots."
+      },
+      "valuation": {
+        "purpose": "Inventory value, COGS, receipt price corrections and period locks.",
+        "flow": "Cost is pooled per SKU and owner across warehouses. Client consignment is never an asset.",
+        "steps": [
+          "Stock value tab: pick a date, method and grouping.",
+          "COGS tab: pick a date range.",
+          "Price corrections tab: enter the real price for receipts posted without one.",
+          "Period lock tab: lock the books up to a date once it is closed."
+        ],
+        "note": "Only an Admin can unlock a period."
+      },
+      "export": {
+        "purpose": "Download reports for the archive or to send on.",
+        "flow": "Reports follow the warehouse filter in the header. Text a spreadsheet would run as a formula is made safe.",
+        "steps": [
+          "Pick a report.",
+          "Fill in dates, SKU or count session when asked.",
+          "Click Excel or PDF."
+        ],
+        "note": "Valuation and COGS reports need valuation access."
+      },
+      "integration": {
+        "purpose": "Connect StockDesk to other systems and decide who may do what.",
+        "flow": "API keys are for systems that read stock or create orders. Webhooks push events out. The Users tab manages accounts and access.",
+        "steps": [
+          "Create an API key with only the access it needs and copy it when shown.",
+          "Add a webhook with an https URL, pick its events and keep the secret.",
+          "Invite users, give them a role, then add access exceptions if needed."
+        ],
+        "note": "Keys and secrets are shown once. If lost, create a new one or rotate the secret."
+      }
+    },
+    "tour": {
+      "next": "Next",
+      "prev": "Previous",
+      "done": "Done"
+    },
+    "tours": {
+      "profile": [
+        {
+          "title": "Profile Photo",
+          "desc": "Click your photo to upload a new one."
+        },
+        {
+          "title": "Account Info",
+          "desc": "Your role and account status (read-only)."
+        },
+        {
+          "title": "Email",
+          "desc": "Your login email address - can be changed here."
+        },
+        {
+          "title": "Personal Info",
+          "desc": "Update your name and other personal details."
+        },
+        {
+          "title": "Language",
+          "desc": "Choose the app language: Indonesian or English."
+        },
+        {
+          "title": "Security",
+          "desc": "Change your account password here."
+        }
+      ],
+      "notifications": [
+        {
+          "title": "Notifications",
+          "desc": "Click to see recent alerts, like low stock or pending approvals."
+        }
+      ],
+      "theme": [
+        {
+          "title": "Switch Theme",
+          "desc": "Open this menu to choose light, dark, or follow your system."
+        }
+      ],
+      "logout": [
+        {
+          "title": "Account Menu",
+          "desc": "Click to open profile settings or sign out."
+        }
+      ],
+      "master-product": [
+        {
+          "title": "Master data tabs",
+          "desc": "Products, categories, units, owners, suppliers and customers live here."
+        },
+        {
+          "title": "Search",
+          "desc": "Search by code, name, SKU or barcode."
+        },
+        {
+          "title": "Actions",
+          "desc": "Create a product or print labels for the ticked SKUs."
+        }
+      ],
+      "master-warehouse": [
+        {
+          "title": "Warehouses",
+          "desc": "Pick a warehouse. The choice also drives the warehouse filter in the header."
+        },
+        {
+          "title": "Location tree",
+          "desc": "Zones, aisles, racks and bins. The buttons on top add a zone or generate bins in bulk."
+        },
+        {
+          "title": "Bin grid",
+          "desc": "Color shows how full each bin is: empty, under 80%, over 80%, full."
+        }
+      ],
+      "goods-receipt": [
+        {
+          "title": "New receipt",
+          "desc": "Start a goods receipt draft here."
+        },
+        {
+          "title": "Search",
+          "desc": "Search by GR number, PO reference or supplier."
+        },
+        {
+          "title": "Receipts",
+          "desc": "Tap a receipt for details, attachments and putaway progress."
+        }
+      ],
+      "putaway": [
+        {
+          "title": "Scan an item",
+          "desc": "Scan an item at the dock to open its task."
+        },
+        {
+          "title": "Putaway tasks",
+          "desc": "Oldest first. Tap one to choose its bin."
+        }
+      ],
+      "pick-list": [
+        {
+          "title": "Orders and pick lists",
+          "desc": "The first tab holds sales orders, the second the pick lists in progress."
+        },
+        {
+          "title": "Actions",
+          "desc": "Create an order, or build a pick list from the ticked orders."
+        }
+      ],
+      "dispatch": [
+        {
+          "title": "Dispatch flow",
+          "desc": "To pack, to dispatch, then dispatched."
+        }
+      ],
+      "stock-transfer": [
+        {
+          "title": "Two kinds of transfer",
+          "desc": "Bin to bin inside a warehouse, or between warehouses."
+        }
+      ],
+      "stock-opname": [
+        {
+          "title": "New count",
+          "desc": "Start a count for the whole warehouse or part of it."
+        },
+        {
+          "title": "Counts",
+          "desc": "Tap one to count or approve it."
+        }
+      ],
+      "stock-audit": [
+        {
+          "title": "Movements, stock card, audit",
+          "desc": "Three views of stock and data history."
+        },
+        {
+          "title": "Filters",
+          "desc": "Date range, SKU, type and document number."
+        }
+      ],
+      "dashboard": [
+        {
+          "title": "Key numbers",
+          "desc": "Click a card to open its page."
+        },
+        {
+          "title": "Critical stock",
+          "desc": "SKUs that reached their reorder point."
+        }
+      ],
+      "valuation": [
+        {
+          "title": "Four tabs",
+          "desc": "Stock value, COGS, price corrections and period lock."
+        }
+      ],
+      "export": [
+        {
+          "title": "Report type",
+          "desc": "Pick the report to download."
+        },
+        {
+          "title": "Parameters",
+          "desc": "Fill in dates or SKU, then choose Excel or PDF."
+        }
+      ],
+      "integration": [
+        {
+          "title": "Three tabs",
+          "desc": "API keys, webhooks, and users & access."
+        },
+        {
+          "title": "API keys",
+          "desc": "Create keys and see when each was last used."
+        }
+      ]
+    },
+    "rolesTitle": "Workflows by role",
+    "roles": {
+      "worker": {
+        "title": "Warehouse worker",
+        "steps": [
+          "Receive: create a receipt, scan items, enter batch and expiry, post it.",
+          "Putaway: scan items in receiving and store them in the suggested bin.",
+          "Pick: open a pick list, follow the route, scan bin and item at each stop.",
+          "Pack & ship: scan picked items, enter weight and courier, print the delivery order.",
+          "Count: count the assigned bins without seeing system quantities, then submit."
+        ]
+      },
+      "manager": {
+        "title": "Warehouse manager",
+        "steps": [
+          "Morning: check the dashboard for critical stock, expiring batches and pending putaway.",
+          "Create sales orders and generate pick lists per warehouse.",
+          "Send inter-warehouse transfers and approve receiving variances.",
+          "Start counts and approve or reject their variances (never your own count).",
+          "Use the movement log and stock card when something looks off."
+        ]
+      },
+      "admin": {
+        "title": "Admin",
+        "steps": [
+          "Price receipts and correct the ones still estimated.",
+          "Review valuation as of a date and COGS per period, FIFO against average.",
+          "Lock the books up to a closed date.",
+          "Export reports for the archive or the accountant.",
+          "Manage users, access, API keys and webhooks."
+        ]
+      }
+    }
+  },
+  "pending": {
+    "title": "Account not activated yet",
+    "description": "This module arrives in phase {{phase}}.",
+    "body": "You are signed in as {{email}}, but an Admin has not given you a role yet. Ask your warehouse Admin for access.",
+    "signOut": "Sign out"
+  },
+  "labels": {
+    "barcode": "Barcode (Code128)",
+    "qr": "QR code",
+    "copies": "Copies per item",
+    "kind": "Label type",
+    "print": "Print PDF",
+    "printCount_one": "Print label ({{count}})",
+    "printCount_other": "Print labels ({{count}})",
+    "select": "Select {{sku}} for labels",
+    "sheetHint": "A4 sheet, 21 labels per page (63.5 x 38.1 mm).",
+    "title_one": "Print {{count}} label",
+    "title_other": "Print {{count}} labels",
+    "paper": "Paper",
+    "paperA4": "A4, 3 x 7 labels (63.5 x 38.1 mm)",
+    "paperThermal": "Thermal 50 x 30 mm, one label per page"
+  },
+  "master": {
+    "deleteConfirm": "Delete {{name}}? Records still in use cannot be deleted.",
+    "emptyList": "Nothing here yet",
+    "fields": {
+      "code": "Code",
+      "name": "Name",
+      "owner_type": "Owner type",
+      "contact_name": "Contact",
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "ownerType": {
+      "in_house": "In-house",
+      "client": "Client (consignment)"
+    },
+    "subtitles": {
+      "products": "Parent products and their SKU variants.",
+      "categories": "Item groups for reports and rack rules.",
+      "uoms": "Units SKUs can use (Pcs, Box, Kg...).",
+      "owners": "Who owns the goods: your own brand or a consignment client.",
+      "suppliers": "Vendors for goods receipts.",
+      "customers": "Customers for sales orders."
+    },
+    "filters": {
+      "dateRange": "Date range"
+    }
+  },
+  "products": {
+    "new": "New product",
+    "edit": "Edit product",
+    "addSku": "New SKU for {{product}}",
+    "addSkuShort": "Add SKU",
+    "allCategories": "All categories",
+    "allOwners": "All owners",
+    "baseUomHint": "Stock is stored in this unit and it cannot change later.",
+    "baseUomLocked": "The base unit is locked once the SKU exists.",
+    "batch": "Batch",
+    "expiry": "Expiry",
+    "empty": "No products yet",
+    "emptyHint": "Create the first product; its variants become SKUs.",
+    "noBarcode": "no barcode",
+    "ownerHint": "Client goods are not counted as assets.",
+    "searchPlaceholder": "Search code, name, SKU, barcode...",
+    "showSkus": "Show SKUs",
+    "skuCount_one": "{{count}} SKU",
+    "skuCount_other": "{{count}} SKUs",
+    "skuDefaults": "SKU defaults",
+    "fields": {
+      "code": "Product code",
+      "name": "Name",
+      "category": "Category",
+      "owner": "Owner",
+      "description": "Description",
+      "barcode": "Barcode",
+      "baseUom": "Base unit",
+      "skuCode": "SKU code",
+      "trackBatch": "Track batch/lot",
+      "trackExpiry": "Track expiry (FEFO)",
+      "safety_stock": "Safety stock",
+      "reorder_point": "Reorder point",
+      "reorder_qty": "Reorder qty",
+      "weight_kg": "Weight (kg)",
+      "length_cm": "Length (cm)",
+      "width_cm": "Width (cm)",
+      "height_cm": "Height (cm)"
+    },
+    "tabs": {
+      "products": "Products",
+      "categories": "Categories",
+      "uoms": "Units",
+      "owners": "Owners",
+      "suppliers": "Suppliers",
+      "customers": "Customers"
+    },
+    "uom": {
+      "title": "Packaging units",
+      "add": "Add unit",
+      "afterSave": "Packaging units (Pack, Box...) can be added once the SKU is saved.",
+      "baseIs": "Base unit: {{uom}} (factor 1). Factor = how many base units it holds.",
+      "factor": "Factor",
+      "sample": "Sample qty",
+      "unit": "Unit",
+      "errors": {
+        "noBase": "The base unit must have factor 1.",
+        "badFactor": "Factors must be positive whole numbers.",
+        "duplicateUnit": "The same unit appears twice.",
+        "duplicateFactor": "Two units share a factor."
+      }
+    },
+    "variants": {
+      "title": "Variants",
+      "attribute": "Attribute",
+      "values": "Values, comma separated",
+      "addAttribute": "Add attribute",
+      "preview_one": "{{count}} SKU will be created",
+      "preview_other": "{{count}} SKUs will be created"
+    },
+    "import": {
+      "button": "Import",
+      "title": "Import products from Excel",
+      "desc": "Use an exported file as the template. Required columns: {{columns}}. Up to 5 MB and 5000 rows.",
+      "choose": "Choose an .xlsx file",
+      "tooBig": "The file is over 5 MB",
+      "unreadable": "The file could not be read as .xlsx",
+      "validRows_one": "{{count}} row ready to import",
+      "validRows_other": "{{count}} rows ready to import",
+      "fixFirst_one": "{{count}} row has a problem. Fix it first; the import is all or nothing.",
+      "fixFirst_other": "{{count}} rows have problems. Fix them first; the import is all or nothing.",
+      "rowError": "Row {{row}}: {{message}}",
+      "confirm": "Import {{count}} rows",
+      "done": "{{count}} rows imported",
+      "another": "Choose another file"
+    }
+  },
+  "warehouses": {
+    "title": "Warehouses",
+    "subtitle": "Warehouses and their zone, aisle, rack, bin tree.",
+    "new": "New warehouse",
+    "edit": "Edit warehouse",
+    "all": "All warehouses",
+    "filter": "Warehouse filter",
+    "empty": "No warehouses yet",
+    "emptyHint": "Receiving, staging, quarantine and transit bins are created automatically.",
+    "codeHint": "Prefixes every location code and cannot change later.",
+    "codeLocked": "The warehouse code is locked.",
+    "addNode": "Add {{level}}",
+    "anyCategory": "Any category",
+    "binCount": "{{bins}} bins, {{storage}} for storage/picking",
+    "deleteConfirm": "Delete {{code}}? Locations with children or stock cannot be deleted.",
+    "gridHint": "This warehouse has no aisles or bins yet.",
+    "selectHint": "Pick a location in the tree.",
+    "pickSequenceHint": "Walking order for picking, lowest first.",
+    "toggle": "Expand/collapse",
+    "fields": {
+      "code": "Code",
+      "name": "Name",
+      "address": "Address",
+      "type": "Type",
+      "binType": "Bin type",
+      "maxQty": "Capacity (base units)",
+      "maxWeight": "Max weight (kg)",
+      "pickSequence": "Pick sequence",
+      "categories": "Allowed categories",
+      "coords": "Coordinates"
+    },
+    "types": {
+      "main": "Main warehouse",
+      "store": "Store",
+      "transit": "Transit"
+    },
+    "levels": {
+      "zone": "Zone",
+      "aisle": "Aisle",
+      "rack": "Rack",
+      "bin": "Bin"
+    },
+    "binTypes": {
+      "receiving": "Receiving",
+      "storage": "Storage",
+      "picking": "Picking",
+      "staging": "Staging",
+      "dispatch": "Dispatch",
+      "quarantine": "Quarantine",
+      "in_transit": "In transit"
+    },
+    "fill": {
+      "empty": "Empty",
+      "low": "< 80%",
+      "high": "≥ 80%",
+      "full": "Full",
+      "unknown": "No capacity"
+    },
+    "binsGenerated": "Bins generated",
+    "generator": {
+      "title": "Generate bins",
+      "zone": "Zone",
+      "aisles": "Aisles",
+      "racks": "Racks per aisle",
+      "levels": "Levels per rack",
+      "rangeHint": "e.g. A-D, 01-04 or A,C,F",
+      "preview": "{{total}} bins, e.g. {{example}}. Existing ones are skipped.",
+      "run": "Generate"
+    },
+    "contents": "Holding {{qty}} of {{max}} capacity",
+    "reserved": "{{qty}} reserved",
+    "binEmpty": "Empty bin.",
+    "map": {
+      "modes": {
+        "fill": "Utilization",
+        "expiry": "Expiry",
+        "activity": "Pick activity"
+      },
+      "expiry": {
+        "full": "Expired",
+        "high": "Expiring soon",
+        "low": "Safe",
+        "unknown": "No expiry",
+        "empty": "Empty"
+      },
+      "activity": {
+        "none": "No picks",
+        "low": "Rare",
+        "high": "Busiest (30 days)"
+      },
+      "picks": "{{count}} picks",
+      "dock": "Dock",
+      "noRoute": "No pick route",
+      "route": "{{no}} · {{count}} stops"
+    },
+    "coordsHint": "Format \"lat, lng\". Right-click a spot in Google Maps and click the numbers to copy them."
+  },
+  "attachments": {
+    "add": "Attach",
+    "uploaded": "Attachment uploaded",
+    "tooLarge": "Files can be at most {{mb}} MB."
+  },
+  "batch": {
+    "exp": "exp {{date}}"
+  },
+  "scanner": {
+    "camera": "Scan with camera",
+    "placeholder": "Scan or type a code, then Enter",
+    "unknown": "Unknown code {{code}}",
+    "unsupported": "This browser cannot scan with the camera. Use a scanner or type the code."
+  },
+  "skuPicker": {
+    "placeholder": "Pick a SKU",
+    "search": "Search SKU, name, barcode..."
+  },
+  "putaway": {
+    "title": "Putaway",
+    "subtitle": "Move received goods from the dock into storage bins.",
+    "confirm": "Put away here",
+    "done": "Stock put away",
+    "empty": "No putaway tasks",
+    "emptyHint": "Tasks appear once a goods receipt is posted.",
+    "free": "{{qty}} free",
+    "noSuggestion": "No bin fits; scan a destination bin.",
+    "noTaskFor": "No open task for {{code}}",
+    "offList": "Not a suggestion, still allowed",
+    "qty": "Qty (base units)",
+    "remaining": "{{qty}} left",
+    "scanBin": "Scan the destination bin label",
+    "scanItem": "Scan an item to open its task",
+    "suggestions": "Suggested bins",
+    "target": "Destination:",
+    "unknownBin": "Bin {{code}} is not in this warehouse",
+    "rank": {
+      "1": "Same SKU & batch",
+      "2": "Empty bin",
+      "3": "Nearest"
+    }
+  },
+  "receipts": {
+    "title": "Goods Receipts",
+    "subtitle": "Goods coming in from suppliers, production or returns.",
+    "new": "New receipt",
+    "empty": "No receipts yet",
+    "search": "Search GR number, reference, supplier...",
+    "addLine": "Add line",
+    "saveDraft": "Save draft",
+    "post": "Post to stock",
+    "cancel": "Cancel receipt",
+    "posted": "Receipt posted",
+    "cancelled": "Receipt cancelled",
+    "lineCount_one": "{{count}} line",
+    "lineCount_other": "{{count}} lines",
+    "ownerLocked": "Remove the lines to change the owner.",
+    "rejectPlaceholder": "e.g. torn packaging",
+    "rejectedLine": "{{qty}} failed QC: {{reason}}",
+    "putawayProgress": "Put away {{done}} / {{total}}",
+    "scanPlaceholder": "Scan an item barcode to add a line",
+    "fields": {
+      "warehouse": "Warehouse",
+      "source": "Source",
+      "supplier": "Supplier",
+      "owner": "Goods owner",
+      "date": "Receipt date",
+      "reference": "PO / delivery note no.",
+      "note": "Note",
+      "sku": "SKU",
+      "uom": "Unit",
+      "qty": "Qty received",
+      "rejected": "Failed QC",
+      "rejectReason": "Reason",
+      "batch": "Batch/lot no.",
+      "mfgDate": "Mfg date",
+      "expiryDate": "Expiry date",
+      "unitCost": "Price per unit",
+      "customer": "Customer"
+    },
+    "sources": {
+      "supplier": "Supplier",
+      "production": "Production",
+      "customer_return": "Customer return",
+      "client_inbound": "Client inbound"
+    },
+    "status": {
+      "draft": "Draft",
+      "received": "Received",
+      "putaway_done": "Put away",
+      "cancelled": "Cancelled"
+    },
+    "problems": {
+      "sku": "Pick a SKU and unit",
+      "qty": "Qty must be above 0",
+      "reject": "Failed QC cannot exceed qty received",
+      "reason": "Give a QC failure reason",
+      "batch": "This SKU needs a batch number",
+      "expiry": "This SKU needs an expiry date",
+      "supplier": "Pick a supplier",
+      "header": "Fill in warehouse, owner and supplier",
+      "fixFirst": "Fix the highlighted fields before posting",
+      "customer": "Pick the returning customer",
+      "owner": "Pick an owner (client inbound takes a client owner)"
+    },
+    "confirm": {
+      "post": {
+        "title": "Post this receipt?",
+        "body": "Stock is added to the receiving bin and putaway tasks are created. A posted receipt cannot be edited.",
+        "action": "Post"
+      },
+      "cancel": {
+        "title": "Cancel this receipt?",
+        "body": "This draft will never add stock.",
+        "action": "Cancel receipt"
+      },
+      "delete": {
+        "title": "Delete this receipt?",
+        "body": "The draft and its lines are deleted for good.",
+        "action": "Delete"
+      }
+    },
+    "costs": {
+      "open": "Enter prices",
+      "title": "Purchase price per line",
+      "hint": "Price per unit used on the line. A line left empty posts at the last purchase price and is flagged as an estimate.",
+      "perUnit": "Price per unit for {{line}}"
+    },
+    "emptyHint": "Record goods arriving from suppliers, production or returns."
+  },
+  "orders": {
+    "new": "New sales order",
+    "subtitle": "Orders from manual entry, POS or marketplace. Tick some and build a pick list.",
+    "empty": "No sales orders yet",
+    "search": "Search SO number, customer, reference...",
+    "cancel": "Cancel order",
+    "cancelled": "Order cancelled",
+    "cancelTitle": "Cancel {{no}}?",
+    "cancelBody": "This order will not be processed any further.",
+    "partlyAllocated": "Only {{got}} of {{need}} allocated; the rest waits for stock.",
+    "scanPlaceholder": "Scan an item to add a line",
+    "fields": {
+      "channel": "Channel",
+      "customer": "Customer",
+      "date": "Order date",
+      "qty": "Qty",
+      "reference": "Reference no.",
+      "shipTo": "Ship to"
+    },
+    "channels": {
+      "manual": "Manual",
+      "pos": "POS",
+      "marketplace": "Marketplace",
+      "api": "API"
+    },
+    "problems": {
+      "customer": "Enter a customer name",
+      "fixFirst": "Fill in the customer and order lines first"
+    },
+    "status": {
+      "open": "Open",
+      "allocated": "Allocated",
+      "picking": "Picking",
+      "picked": "Picked",
+      "packed": "Packed",
+      "dispatched": "Dispatched",
+      "cancelled": "Cancelled"
+    }
+  },
+  "picking": {
+    "tabs": {
+      "orders": "Sales orders",
+      "lists": "Pick lists"
+    },
+    "subtitle": "Picking routes, the next stop on top.",
+    "empty": "No active pick lists",
+    "emptyHint": "Build one from the Sales orders tab.",
+    "generate": "Build pick list ({{count}})",
+    "generated": "Pick list created",
+    "oneWarehouse": "Pick orders from one warehouse only",
+    "select": "Select {{no}}",
+    "showAll": "Show all",
+    "activeOnly": "Active only",
+    "progress": "{{done}}/{{total}} stops",
+    "stop": "Stop {{seq}}",
+    "allDone": "All stops done. Goods are in staging, ready for packing.",
+    "stepBin": "Right bin",
+    "stepItem": "Right item",
+    "scanBin": "Scan the bin label",
+    "scanItem": "Scan the item barcode",
+    "wrongBin": "{{code}} is not bin {{bin}}",
+    "wrongItem": "{{code}} is not the item for this stop",
+    "qtyPicked": "Qty picked",
+    "planned": "Planned {{qty}}",
+    "shortReason": "Short pick reason",
+    "shortPlaceholder": "e.g. damaged, not on the shelf",
+    "confirm": "Confirm pick",
+    "confirmShort": "Confirm short pick",
+    "confirmed": "Recorded",
+    "cancelList": "Cancel pick list",
+    "cancelled": "Pick list cancelled",
+    "cancelTitle": "Cancel this pick list?",
+    "cancelBody": "Stops not yet picked are released and the orders wait for allocation again.",
+    "lineStatus": {
+      "picked": "Picked",
+      "short": "Short",
+      "cancelled": "Cancelled"
+    },
+    "status": {
+      "open": "Open",
+      "picking": "Picking",
+      "done": "Done",
+      "cancelled": "Cancelled"
+    }
+  },
+  "dispatch": {
+    "title": "Packing & Dispatch",
+    "subtitle": "Scan-check, pack, then hand over to the courier with a delivery order.",
+    "tabs": {
+      "pack": "To pack ({{count}})",
+      "dispatch": "To dispatch ({{count}})",
+      "done": "Dispatched"
+    },
+    "nothingToPack": "Nothing to pack",
+    "nothingToPackHint": "Orders appear here once picking is done.",
+    "nothingToDispatch": "No parcels waiting for a courier",
+    "noneDispatched": "Nothing dispatched yet",
+    "startPacking": "Pack",
+    "packTitle": "Packing {{no}}",
+    "scanItem": "Scan every item before it goes in the box",
+    "notInOrder": "{{code}} is not in this order",
+    "tooMany": "{{sku}} is already complete",
+    "less": "Less",
+    "more": "More",
+    "weight": "Weight (kg)",
+    "packages": "Parcels",
+    "dimensions": "Size (cm)",
+    "pack": "Finish packing",
+    "scanAll": "Scan every item first",
+    "packed": "Parcel ready to ship",
+    "packageCount_one": "{{count}} parcel",
+    "packageCount_other": "{{count}} parcels",
+    "dispatch": "Dispatch",
+    "dispatchTitle": "Dispatch {{no}}",
+    "courier": "Courier",
+    "trackingNo": "Tracking no.",
+    "dispatchHint": "Stock is taken out and the delivery order opens for printing.",
+    "dispatched": "Dispatched",
+    "printDo": "Print delivery order",
+    "trackHint": "Open the courier tracking page (tracking number is copied)",
+    "trackingCopied": "Tracking number {{no}} copied, paste it on the courier page"
+  },
+  "transfers": {
+    "title": "Stock Transfer",
+    "subtitle": "Move between bins in a warehouse, or ship between warehouses through a transit bin.",
+    "tabs": {
+      "bin": "Bin to bin",
+      "inter": "Between warehouses"
+    },
+    "binHint": "Warehouse {{wh}}. Change it with the filter in the header.",
+    "scanFrom": "Scan the source bin",
+    "scanTo": "Scan the destination bin",
+    "from": "From",
+    "to": "To",
+    "change": "Change",
+    "binEmpty": "No free stock in this bin.",
+    "qty": "Qty (base units)",
+    "note": "Note",
+    "move": "Move",
+    "moved": "Stock moved",
+    "noBinMoves": "No bin moves yet",
+    "newInter": "Warehouse transfer",
+    "fromWarehouse": "From warehouse",
+    "toWarehouse": "To warehouse",
+    "sameWarehouse": "Pick a different destination",
+    "source": "Stock source",
+    "pickSource": "Pick bin · SKU · batch",
+    "saveDraft": "Save draft",
+    "noInter": "No warehouse transfers yet",
+    "noInterHint": "A manager drafts and sends; the destination receives.",
+    "send": "Send",
+    "sent": "Sent {{qty}}",
+    "receive": "Receive",
+    "cancel": "Cancel",
+    "receiveTitle": "Receive {{no}}",
+    "qtyReceived": "Qty received",
+    "reason": "Variance reason",
+    "reasonPlaceholder": "e.g. lost in transit, damaged",
+    "confirmReceive": "Confirm receipt",
+    "received": "Transfer received",
+    "decided": "Decision saved",
+    "cancelled": "Transfer cancelled",
+    "variancePending": "{{qty}} missing, pending",
+    "writeOff": "Write off",
+    "keepInTransit": "Keep in transit",
+    "writtenOff": "Written off",
+    "status": {
+      "draft": "Draft",
+      "in_transit": "In transit",
+      "received": "Received",
+      "done": "Done",
+      "cancelled": "Cancelled"
+    },
+    "confirm": {
+      "send": {
+        "title": "Send {{no}}?",
+        "body": "Stock leaves its bins for the transit bin and the draft can no longer change.",
+        "action": "Send"
+      },
+      "cancel": {
+        "title": "Cancel {{no}}?",
+        "body": "This draft will not move any stock.",
+        "action": "Cancel"
+      }
+    }
+  },
+  "counts": {
+    "title": "Stock Opname",
+    "subtitle": "Physical counts; a manager approves the variances and stock is adjusted.",
+    "new": "New count",
+    "empty": "No counts yet",
+    "scope": "Locations",
+    "wholeWarehouse": "Whole warehouse",
+    "partial_one": "{{count}} location",
+    "partial_other": "{{count}} locations",
+    "category": "Category",
+    "blind": "Blind count",
+    "blindHint": "Counters do not see system quantities, so numbers come from real counting.",
+    "blindOn": "Blind count",
+    "notePlaceholder": "e.g. monthly count zone A",
+    "start": "Start counting",
+    "started": "Count started, bins locked",
+    "startHint": "Starting records system quantities and locks the bins in scope: nothing moves in or out until the count closes.",
+    "progress": "{{done}}/{{total}} lines counted",
+    "scanBin": "Scan the bin you are counting",
+    "scanItem": "Scan items you find",
+    "otherBin": "Other bin",
+    "binNotInCount": "{{code}} is not in this count",
+    "binExpectedEmpty": "This bin should be empty. Scan anything you find.",
+    "counted": "Counted",
+    "system": "system {{qty}}",
+    "recorded": "Recorded",
+    "foundItem": "Unexpected item: {{sku}}",
+    "addFound": "Add",
+    "allLines": "All bins",
+    "submit": "Submit for approval",
+    "submitted": "Count submitted",
+    "countAllFirst": "{{left}} lines still to count",
+    "waitingApproval": "Waiting for a manager to approve.",
+    "varianceSummary": "{{lines}} of {{total}} lines differ",
+    "bin": "Bin",
+    "systemCol": "System",
+    "variance": "Variance",
+    "value": "Value",
+    "approve": "Approve & adjust stock",
+    "approved": "Stock adjusted",
+    "reject": "Reject",
+    "rejectReason": "Reason for rejecting (required)",
+    "closed": "Count closed",
+    "rejectedBecause": "Rejected: {{reason}}",
+    "ownCount": "You submitted this count; another manager has to approve it.",
+    "cancel": "Cancel count",
+    "cancelTitle": "Cancel this count?",
+    "cancelBody": "Bins unlock and stock stays unchanged.",
+    "status": {
+      "draft": "Draft",
+      "counting": "Counting",
+      "submitted": "Awaiting approval",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "emptyHint": "Start a count to check physical stock against the system."
+  },
+  "audit": {
+    "title": "Movement Log & Audit",
+    "subtitle": "A permanent record of every stock move and master data change.",
+    "tabs": {
+      "movements": "Movements",
+      "card": "Stock card",
+      "audit": "Master audit"
+    },
+    "allTypes": "All types",
+    "refSearch": "Document no.",
+    "when": "When",
+    "type": "Type",
+    "route": "From → to",
+    "qty": "Qty",
+    "ref": "Document",
+    "by": "By",
+    "system": "system",
+    "date": "Date",
+    "in": "In",
+    "out": "Out",
+    "balance": "Balance ({{uom}})",
+    "noMovements": "No movements in this range",
+    "noAudit": "No changes in this range",
+    "pickSku": "Pick a SKU",
+    "pickSkuHint": "The stock card shows the opening balance, ins, outs and running balance of one SKU.",
+    "types": {
+      "opening": "Opening balance",
+      "receipt": "Receipt",
+      "qc_reject": "QC reject",
+      "putaway": "Putaway",
+      "bin_transfer": "Bin move",
+      "pick": "Pick",
+      "dispatch": "Dispatch",
+      "transfer_out": "Transfer out",
+      "transfer_in": "Transfer in",
+      "adjustment": "Adjustment",
+      "return": "Return"
+    },
+    "actions": {
+      "insert": "created",
+      "update": "updated",
+      "delete": "deleted",
+      "create": "created"
+    },
+    "allUsers": "All users",
+    "user": "User",
+    "batchSearch": "Batch no."
+  },
+  "dashboard": {
+    "assetValue": "Stock asset value",
+    "activeSkus": "Active SKUs",
+    "belowReorder": "Below reorder point",
+    "expiring": "Expiring in ≤ {{days}} days",
+    "putawayPending": "Putaway pending",
+    "pickListsToday": "Pick lists today",
+    "countAccuracy": "Last count accuracy",
+    "trend": "Stock value, 6 months",
+    "trendHint": "Month-end values from daily snapshots, last point is today.",
+    "trendEmpty": "No snapshots yet. The chart fills once the daily job runs.",
+    "movers": "Fast & slow movers",
+    "moversHint": "Quantity dispatched in the last 90 days.",
+    "fast": "Fast",
+    "slow": "Slow",
+    "noMovement": "No movement yet",
+    "outQty": "Out",
+    "onHand": "On hand",
+    "criticalStock": "Critical stock",
+    "noCritical": "Every SKU is above its reorder point",
+    "reorderAt": "ROP {{rop}} · order {{qty}}",
+    "expiringSoon": "Expiring soon",
+    "noExpiring": "No batch is close to expiry",
+    "expired": "Expired",
+    "turnover": "Turnover by category",
+    "turnoverHint": "Units out in 90 days per unit on hand now.",
+    "cogsMonth": "COGS this month",
+    "lockedUntil": "Books locked to {{date}}",
+    "outOfStock": "Out of stock",
+    "dispatchedToday": "Shipped today",
+    "flow": "Inbound vs outbound, 30 days",
+    "flowHint": "Units received (incl. QC rejects) and dispatched per day.",
+    "flowIn": "Received",
+    "flowOut": "Dispatched",
+    "queue": "Waiting for action",
+    "queueHint": "Open work per step; click to go there.",
+    "queueEmpty": "Nothing is waiting",
+    "queueItems": {
+      "receipt_drafts": "Draft goods receipts",
+      "orders_open": "Orders to allocate",
+      "pick_lists_open": "Pick lists to pick",
+      "to_pack": "Orders to pack",
+      "to_dispatch": "Packages to ship",
+      "in_transit": "Transfers in transit",
+      "variances": "Transfer variances to decide",
+      "counts_active": "Counts in progress",
+      "counts_submitted": "Counts to approve",
+      "estimated_costs": "Receipts with estimated cost",
+      "webhooks_failed": "Failed webhook deliveries"
+    },
+    "utilization": "Bin usage",
+    "utilizationHint": "Storage and picking bins holding stock.",
+    "noBins": "No storage bins yet",
+    "binsUsed": "{{used}}/{{bins}} bins",
+    "fill": "{{pct}}% of bin capacity filled",
+    "recent": "Recent activity",
+    "recentHint": "Latest stock movements.",
+    "criticalHint_one": "{{count}} SKU at or under its reorder point. Label: on hand / reorder point.",
+    "criticalHint_other": "{{count}} SKUs at or under their reorder point. Label: on hand / reorder point.",
+    "legendOut": "Out of stock",
+    "legendOnHand": "On hand",
+    "legendRop": "Reorder point",
+    "expiredAgo_one": "expired {{count}} day ago",
+    "expiredAgo_other": "expired {{count}} days ago",
+    "expiresToday": "today",
+    "daysLeft_one": "{{count}} day left",
+    "daysLeft_other": "{{count}} days left",
+    "today": "Today",
+    "expiringHint_one": "{{count}} batch in stock, soonest first.",
+    "expiringHint_other": "{{count}} batches in stock, soonest first.",
+    "network": {
+      "title": "Warehouse network",
+      "hint": "Click a dot for warehouse details, hover a line for the transfer.",
+      "legendDone": "Transfer received (30 days)",
+      "legendMoving": "Transfer in transit",
+      "inTransit": "{{count}} transfers in transit · {{qty}} pcs",
+      "received": "{{count}} transfers received (30 days)",
+      "stock": "{{qty}} pcs · {{skus}} SKUs",
+      "openOrders": "{{count}} orders not shipped",
+      "unpinned": "No location yet: {{codes}}.",
+      "setPins": "Set it in Master Data › Warehouses",
+      "legendMain": "Main warehouse",
+      "legendStore": "Store / transit",
+      "legendSize": "Bigger = more stock",
+      "listTitle": "Warehouses",
+      "listHint": "Click to jump to it on the map. Bar = bin usage.",
+      "incoming": "{{count}} inbound transfers"
+    }
+  },
+  "valuation": {
+    "title": "Valuation & Finance",
+    "subtitle": "Inventory value, COGS, price corrections and period locks.",
+    "tabs": {
+      "value": "Stock value",
+      "cogs": "COGS",
+      "costs": "Price corrections",
+      "lock": "Period lock"
+    },
+    "item": "Item",
+    "qty": "Qty",
+    "unitCost": "Unit cost",
+    "value": "Value",
+    "total": "Total",
+    "kind": "Kind",
+    "kinds": {
+      "sale": "Sale",
+      "adjustment": "Adjustment",
+      "revaluation": "Revaluation"
+    },
+    "methods": {
+      "fifo": "FIFO",
+      "average": "Average"
+    },
+    "methodDesc": {
+      "fifo": "First in, first out. What is left carries the latest prices.",
+      "average": "Moving average, recalculated on every receipt."
+    },
+    "method": "Valuation method",
+    "methodHint": "The official method for COGS and reports. Reports can still show the other one for comparison.",
+    "groupBy": "Group by",
+    "groups": {
+      "sku": "By SKU & warehouse",
+      "category": "By category",
+      "owner": "By owner",
+      "warehouse": "By warehouse"
+    },
+    "asOf": "As of",
+    "empty": "No stock on this date",
+    "consignment": "Client consignment",
+    "consignmentHint": "Owned by clients, shown as quantity only and never counted as an asset.",
+    "noCogs": "No COGS in this range",
+    "noEstimates": "Every receipt has a price",
+    "noEstimatesHint": "Receipts posted without a price show up here to be corrected.",
+    "estimatedAt": "estimated {{cost}}",
+    "pricePer": "Price per {{uom}}",
+    "revalue": "Correct",
+    "locks": "Period lock",
+    "locksHint": "Movements, COGS, revaluations and approvals dated up to the lock date are refused.",
+    "lock": "Lock",
+    "unlock": "Unlock",
+    "unlockTitle": "Move the lock back to {{date}}?",
+    "unlockBody": "Transactions dated after this date can be posted again and reports already sent may change. This is recorded in the audit log.",
+    "expiryDays": "Expiry warning (days)",
+    "adminOnly": "Only an Admin can change these settings.",
+    "lockedUntil": "Locked through {{date}}",
+    "nothingLocked": "No period is locked yet.",
+    "lockThrough": "Lock through",
+    "unlockAll": "Unlock all",
+    "unlockAllTitle": "Unlock every period?",
+    "unlockAdminOnly": "Only an Admin can move the lock date back."
+  },
+  "export": {
+    "title": "Export",
+    "subtitle": "Download stock and finance reports as Excel or PDF.",
+    "reports": {
+      "onHand": {
+        "title": "Stock on hand",
+        "desc": "Current balance per bin, SKU and batch."
+      },
+      "card": {
+        "title": "Stock card",
+        "desc": "Opening, in, out and running balance for one SKU."
+      },
+      "movements": {
+        "title": "Movement log",
+        "desc": "Every stock movement in a date range."
+      },
+      "valuation": {
+        "title": "Stock valuation",
+        "desc": "Quantity, unit cost and value as of a date."
+      },
+      "cogs": {
+        "title": "COGS",
+        "desc": "Cost of goods out, FIFO and average."
+      },
+      "opname": {
+        "title": "Count results",
+        "desc": "System quantity, counted quantity and variance for one session."
+      }
+    },
+    "cols": {
+      "warehouse": "Warehouse",
+      "location": "Location",
+      "sku": "SKU",
+      "product": "Item",
+      "batch": "Batch",
+      "expiry": "Expiry",
+      "onHand": "On hand",
+      "reserved": "Reserved",
+      "date": "Date",
+      "type": "Type",
+      "ref": "Document",
+      "from": "From",
+      "to": "To",
+      "in": "In",
+      "out": "Out",
+      "balance": "Balance",
+      "qty": "Qty",
+      "user": "By",
+      "category": "Category",
+      "owner": "Owner",
+      "unitCost": "Unit cost",
+      "value": "Value",
+      "kind": "Kind",
+      "fifo": "FIFO",
+      "average": "Average",
+      "system": "System",
+      "counted": "Counted",
+      "variance": "Variance",
+      "varianceValue": "Variance value"
+    },
+    "allWarehouses": "All warehouses",
+    "emptyReport": "The report is empty for this selection",
+    "warehouseNote": "Warehouse: {{name}} (change it in the header).",
+    "pickCount": "Pick a count session",
+    "noCounts": "No approved counts yet."
+  },
+  "integration": {
+    "tabs": {
+      "keys": "API keys",
+      "webhooks": "Webhooks",
+      "users": "Users & access"
+    },
+    "secretOnce": "Copy it now. It is shown only once and cannot be viewed again.",
+    "copy": "Copy",
+    "stored": "I have saved it",
+    "keys": {
+      "title": "API keys",
+      "subtitle": "Server-to-server access to stock, products and orders.",
+      "new": "New API key",
+      "empty": "No API keys yet",
+      "status": {
+        "active": "Active",
+        "revoked": "Revoked",
+        "expired": "Expired"
+      },
+      "lastUsed": "last used",
+      "expires": "Expires",
+      "revoke": "Revoke",
+      "howTo": "How to use the API",
+      "howToNote": "60 requests per minute per key. POST /orders needs an Idempotency-Key header; a retry with the same key gets the first answer.",
+      "name": "Name",
+      "scopes": "Access",
+      "scopeDesc": {
+        "stock_read": "read stock",
+        "products_read": "read products",
+        "orders_write": "create sales orders"
+      },
+      "owner": "Limit to owner",
+      "allOwners": "All owners",
+      "create": "Create key",
+      "created": "New API key",
+      "revokeTitle": "Revoke {{name}}?",
+      "revokeBody": "Systems using this key are refused at once. This cannot be undone."
+    },
+    "hooks": {
+      "title": "Webhooks",
+      "subtitle": "Send stock events to other systems, signed with HMAC.",
+      "new": "New webhook",
+      "empty": "No webhooks yet",
+      "autoDisabled": "Switched off after 20 failed deliveries in a row.",
+      "active": "Active",
+      "history": "Delivery history",
+      "rotate": "Rotate secret",
+      "verifyTitle": "How to verify",
+      "verifyBody": "Compute HMAC-SHA256 of t + \".\" + the raw body with the secret, compare it with v1, and refuse t older than 5 minutes.",
+      "urlHint": "Must be https and a public address.",
+      "events": "Events",
+      "create": "Create webhook",
+      "secretTitle": "Webhook secret",
+      "deleteTitle": "Delete this webhook?",
+      "noDeliveries": "No deliveries yet",
+      "status": {
+        "pending": "Pending",
+        "success": "Delivered",
+        "failed": "Failed"
+      },
+      "attempts_one": "{{count}} attempt",
+      "attempts_other": "{{count}} attempts",
+      "retry": "Send again"
+    },
+    "users": {
+      "title": "Users & access",
+      "subtitle": "Invite people, set roles and grant per-person exceptions.",
+      "invite": "Invite user",
+      "search": "Search name or email...",
+      "inactive": "Inactive",
+      "noRole": "No role",
+      "role": "Role of {{name}}",
+      "permissions": "Edit access",
+      "reactivate": "Reactivate",
+      "deactivate": "Deactivate",
+      "fields": {
+        "full_name": "Full name",
+        "email": "Email",
+        "password": "Initial password",
+        "role": "Role"
+      },
+      "passwordRule": "At least 8 characters with upper case, lower case and a number.",
+      "pickRole": "Pick a role",
+      "create": "Create account",
+      "reactivateTitle": "Reactivate {{name}}?",
+      "deactivateTitle": "Deactivate {{name}}?",
+      "reactivateBody": "They can sign in again with their role's access.",
+      "deactivateBody": "They are signed out and cannot sign in. Their data stays.",
+      "permHint": "Role: {{role}}. Switch on an exception to change access to one feature. Saves at once, applies on their next page load.",
+      "custom": "Custom",
+      "roleDefault": "Role default"
+    }
+  },
+  "superadmin": {
+    "tabs": {
+      "stats": "Stats",
+      "monitor": "Monitor",
+      "maintenance": "Maintenance"
+    },
+    "refresh": "Refresh",
+    "activity": "Activity, last 7 days",
+    "accounts": "Accounts",
+    "banned": "banned",
+    "never": "never signed in",
+    "recentAudit": "Recent audit",
+    "system": "system",
+    "monitor": {
+      "failed_logins": "Failed logins, 7 days (reported by the browser)",
+      "inactive_accounts": "Inactive over 30 days",
+      "access_changes": "Access changes",
+      "api_keys": "API keys near the limit or used after revoking",
+      "webhooks": "Failing or disabled webhooks",
+      "storage": "Storage size",
+      "errors": "Recent errors"
+    },
+    "nothing": "Nothing here",
+    "maintenanceHint": "Current mode: {{mode}}. Nothing here can be undone.",
+    "seedTitle": "Reload demo data",
+    "seedBody": "Deletes everything, then rebuilds the demo company: accounts, warehouses, products and six months of transactions. Superadmin accounts stay.",
+    "seed": "Reload demo",
+    "wipeTitle": "Delete all data",
+    "wipeBody": "Deletes every transaction and master record and every account except superadmins and admin@stockdesk.com.",
+    "wipe": "Delete everything",
+    "typeToConfirm": "Type {{word}} to continue.",
+    "confirmWord": "Type {{word}}",
+    "running": "Running...",
+    "seeded": "Demo data is being rebuilt in the background. Refresh in about a minute.",
+    "wiped": "All data deleted",
+    "movements": "Stock movements",
+    "auditEvents": "Audit"
+  },
+  "forgotPassword": {
+    "title": "Forgot your password?",
+    "subtitle": "Enter your account email and we'll send you a link to set a new one.",
+    "send": "Send reset link",
+    "sending": "Sending...",
+    "sent": "Check your inbox",
+    "sentBody": "We sent a reset link to {{email}}. It can take a minute; check spam too.",
+    "resend": "Use another email",
+    "backToLogin": "Back to sign in"
+  }
+}

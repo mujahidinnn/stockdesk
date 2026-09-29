@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /$
+Disallow: /daily-report
+Disallow: /timeline
+Disallow: /calendar
+Disallow: /attendance
+Disallow: /leave
+Disallow: /issues
+Disallow: /overtime
+Disallow: /export
+Disallow: /master
+Disallow: /chat
+Disallow: /settings
+Disallow: /guide

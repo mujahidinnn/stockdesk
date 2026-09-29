@@ -1,0 +1,1675 @@
+{
+  "app": {
+    "name": "StockDesk",
+    "tagline": "Inventory & WMS",
+    "version": "v0.1.0 · 2026",
+    "footer": "Sistem Manajemen Gudang"
+  },
+  "nav": {
+    "groups": {
+      "overview": "Ringkasan",
+      "masterData": "Master Data",
+      "inbound": "Inbound",
+      "outbound": "Outbound",
+      "stockControl": "Kontrol Stok",
+      "finance": "Finance & Pengaturan",
+      "help": "Bantuan"
+    },
+    "items": {
+      "dashboard": "Dasbor",
+      "products": "Produk & SKU",
+      "warehouses": "Gudang & Bin",
+      "goodsReceipt": "Penerimaan Barang",
+      "putaway": "Putaway",
+      "pickList": "Pick List",
+      "dispatch": "Packing & Pengiriman",
+      "transfer": "Transfer Stok",
+      "opname": "Stock Opname",
+      "audit": "Log Mutasi",
+      "valuation": "Valuasi",
+      "export": "Ekspor",
+      "integration": "Integrasi & Pengguna",
+      "superadmin": "Superadmin",
+      "guide": "Panduan"
+    },
+    "descriptions": {
+      "dashboard": "Nilai stok, peringatan, dan mutasi sekilas",
+      "products": "Barang, varian, satuan, dan label",
+      "warehouses": "Zona, lorong, rak, dan denah bin",
+      "goodsReceipt": "Terima, QC, dan catat batch",
+      "putaway": "Simpan barang masuk ke bin",
+      "pickList": "Ambil barang FEFO dengan rute terpendek",
+      "dispatch": "Verifikasi, kemas, dan kirim order",
+      "transfer": "Pindah antar-bin dan antar-gudang",
+      "opname": "Hitung fisik dengan persetujuan",
+      "audit": "Buku besar stok dan kartu stok",
+      "valuation": "Nilai FIFO / rata-rata dan HPP",
+      "export": "Laporan ke Excel dan PDF",
+      "integration": "API key, webhook, pengguna, dan akses",
+      "superadmin": "Monitor sistem dan data demo",
+      "guide": "Cara kerja tiap menu"
+    },
+    "collapse": "Ciutkan menu",
+    "expand": "Lebarkan menu",
+    "openMenu": "Buka menu"
+  },
+  "commandPalette": {
+    "placeholder": "Cari halaman dan aksi...",
+    "empty": "Tidak ada hasil",
+    "navigateGroup": "Buka",
+    "actionsGroup": "Aksi",
+    "toggleTheme": "Ganti tema terang / gelap",
+    "profileSettings": "Pengaturan profil",
+    "signOut": "Keluar"
+  },
+  "deleteModal": {
+    "cancel": "Batal",
+    "confirm": "Hapus",
+    "deleting": "Menghapus..."
+  },
+  "profile": {
+    "title": "Pengaturan Profil",
+    "subtitle": "Kelola akun & keamanan Anda",
+    "changePhoto": "Ganti Foto",
+    "uploading": "Mengunggah...",
+    "accountInfo": {
+      "title": "Informasi Akun",
+      "description": "Detail akun Anda saat ini. Peran hanya dapat diubah oleh Admin."
+    },
+    "personalInfo": {
+      "title": "Informasi Pribadi",
+      "description": "Perbarui nama tampilan Anda di seluruh dasbor."
+    },
+    "language": {
+      "title": "Bahasa",
+      "description": "Pilih bahasa tampilan yang Anda inginkan. Berlaku segera.",
+      "label": "Bahasa",
+      "english": "English",
+      "indonesian": "Indonesia"
+    },
+    "security": {
+      "title": "Ubah Kata Sandi",
+      "description": "Tetapkan kata sandi baru untuk akun Anda. Minimal 8 karakter.",
+      "currentPassword": "Kata Sandi Saat Ini",
+      "currentPasswordWrong": "Kata sandi saat ini salah",
+      "newPassword": "Kata Sandi Baru",
+      "confirmPassword": "Konfirmasi Kata Sandi",
+      "repeatPassword": "Ulangi kata sandi baru",
+      "passwordMismatch": "Kata sandi tidak cocok",
+      "updatePassword": "Perbarui Kata Sandi",
+      "updating": "Memperbarui..."
+    },
+    "fields": {
+      "email": "Email",
+      "role": "Peran",
+      "fullName": "Nama Lengkap",
+      "fullNamePlaceholder": "Nama lengkap Anda",
+      "phoneNumber": "Nomor Telepon",
+      "phoneNumberPlaceholder": "contoh: +62 812 3456 7890"
+    },
+    "actions": {
+      "saveChanges": "Simpan Perubahan",
+      "saving": "Menyimpan...",
+      "updated": "Profil berhasil diperbarui",
+      "avatarUpdated": "Avatar diperbarui",
+      "passwordUpdated": "Kata sandi berhasil diubah",
+      "languageUpdated": "Bahasa diperbarui"
+    },
+    "email": {
+      "title": "Alamat Email",
+      "description": "Perbarui email login Anda. Tautan konfirmasi akan dikirim ke kedua alamat sebelum perubahan berlaku.",
+      "newEmail": "Alamat Email Baru",
+      "newEmailPlaceholder": "anda@email.com",
+      "currentEmail": "Email saat ini",
+      "updateEmail": "Perbarui Email",
+      "updating": "Mengirim...",
+      "pendingTitle": "Perubahan Email Menunggu Konfirmasi",
+      "pendingDesc": "Tautan konfirmasi telah dikirim ke {{email}} dan alamat Anda saat ini. Periksa kedua kotak masuk.",
+      "cancelChange": "Batalkan",
+      "confirmationSent": "Tautan konfirmasi telah dikirim ke kedua alamat email.",
+      "invalidFormat": "Masukkan alamat email yang valid.",
+      "alreadyInUse": "Email ini sudah terdaftar di akun lain.",
+      "rateLimited": "Terlalu banyak permintaan. Silakan coba lagi nanti.",
+      "cancelSuccess": "Perubahan email dibatalkan."
+    }
+  },
+  "shell": {
+    "profileSettings": "Pengaturan Profil",
+    "signOut": "Keluar",
+    "administrator": "Administrator",
+    "theme": "Tema",
+    "themeLight": "Terang",
+    "themeDark": "Gelap",
+    "themeSystem": "Sistem",
+    "signOutConfirm": {
+      "title": "Keluar dari akun?",
+      "desc": "Kamu perlu login lagi untuk mengakses StockDesk."
+    }
+  },
+  "notifications": {
+    "title": "Notifikasi",
+    "markAllRead": "Tandai semua dibaca",
+    "soundOn": "Nyalakan suara",
+    "soundOff": "Matikan suara",
+    "empty": "Belum ada notifikasi",
+    "emptyHint": "Update akan muncul di sini kalau ada yang butuh perhatian Anda"
+  },
+  "login": {
+    "tagline": "Masuk untuk melanjutkan",
+    "continueWithGoogle": "Lanjutkan dengan Google",
+    "redirecting": "Mengalihkan...",
+    "orEmail": "atau lanjutkan dengan email",
+    "email": "Email",
+    "password": "Kata Sandi",
+    "signIn": "Masuk",
+    "signingIn": "Masuk...",
+    "forgotPassword": "Lupa kata sandi?",
+    "errors": {
+      "invalidCredentials": "Email atau kata sandi salah.",
+      "authServiceError": "Layanan autentikasi error. Coba lagi sebentar.",
+      "googleNotConfigured": "Login Google belum dikonfigurasi. Gunakan email & kata sandi."
+    },
+    "welcome": "Selamat datang!",
+    "heroTitle": "Setiap unit tercatat,\nsetiap bin terkendali.",
+    "heroBody": "Terima, simpan, ambil, dan kirim barang dengan setiap unit tercatat, di semua gudang dan bin.",
+    "demoTitle": "Akun demo",
+    "demoHint": "Pilih peran untuk mengisi email dan password (Demo123!).",
+    "demoRoles": {
+      "admin": "Admin",
+      "manager": "Manajer gudang",
+      "worker": "Staf gudang"
+    },
+    "brandTagline": "Semua stok, dalam satu desk."
+  },
+  "resetPassword": {
+    "title": "Buat kata sandi baru",
+    "subtitle": "Pilih yang belum pernah Anda pakai",
+    "newPassword": "Kata sandi baru",
+    "confirmPassword": "Konfirmasi kata sandi",
+    "save": "Simpan kata sandi",
+    "saving": "Menyimpan...",
+    "success": "Kata sandi diperbarui. Mengarahkan...",
+    "mismatch": "Kedua kata sandi tidak sama",
+    "tooShort": "Kata sandi minimal {{count}} karakter",
+    "linkExpired": "Tautan reset ini sudah tidak berlaku. Minta tautan baru dari halaman login.",
+    "backToLogin": "Kembali ke login"
+  },
+  "common": {
+    "loading": "Memuat...",
+    "save": "Simpan",
+    "saving": "Menyimpan...",
+    "cancel": "Batal",
+    "delete": "Hapus",
+    "edit": "Edit",
+    "active": "Aktif",
+    "inactive": "Nonaktif",
+    "task_one": "tugas",
+    "task_other": "tugas",
+    "required": "Wajib diisi",
+    "export": "Ekspor",
+    "noResults": "Tidak ada hasil",
+    "pickDate": "Pilih tanggal",
+    "clearDate": "Hapus tanggal",
+    "pickTime": "Pilih jam",
+    "pagination": {
+      "range": "{{from}}–{{to}} dari {{total}}",
+      "page": "Halaman {{page}} dari {{pageCount}}"
+    },
+    "detail": "Detail",
+    "submittedAt": "Diajukan",
+    "jobTitle": "Jabatan",
+    "errorTitle": "Ada yang rusak",
+    "errorBody": "Halaman ini gagal ditampilkan. Muat ulang biasanya membereskannya.",
+    "reload": "Muat ulang",
+    "add": "Tambah",
+    "allStatus": "Semua status",
+    "deleted": "Terhapus",
+    "inUse": "Masih dipakai data lain, nonaktifkan saja.",
+    "saved": "Tersimpan",
+    "search": "Cari...",
+    "status": "Status",
+    "errors": {
+      "forbidden": "Anda tidak punya izin untuk ini.",
+      "duplicate": "Data itu sudah ada.",
+      "invalid": "Ada nilai yang tidak valid.",
+      "sessionExpired": "Sesi Anda habis. Silakan masuk lagi.",
+      "network": "Tidak bisa terhubung ke server. Periksa koneksi lalu coba lagi.",
+      "unexpected": "Terjadi kesalahan. Silakan coba lagi.",
+      "loadFailed": "Gagal memuat data: {{reason}}"
+    },
+    "retry": "Coba lagi",
+    "clearSearch": "Hapus pencarian"
+  },
+  "errors": {
+    "notFound": {
+      "title": "Halaman tidak ditemukan",
+      "message": "Halaman yang Anda cari tidak ada.",
+      "back": "Kembali ke Dasbor"
+    },
+    "forbidden": {
+      "badge": "403 Terlarang",
+      "title": "Akses Ditolak",
+      "message": "Anda tidak memiliki izin untuk melihat halaman ini. Hubungi administrator Anda untuk meminta akses.",
+      "goBack": "Kembali",
+      "dashboard": "Dasbor"
+    }
+  },
+  "guide": {
+    "defaultName": "Anda",
+    "welcomeTitle": "Selamat datang, {{name}}",
+    "welcomeSubtitle": "Ini yang bisa kamu lakukan di StockDesk - pilih fitur untuk langsung menuju ke sana",
+    "open": "Buka",
+    "purposeLabel": "Fungsinya",
+    "flowLabel": "Cara kerjanya",
+    "stepsLabel": "Cara pakainya",
+    "noteLabel": "Catatan",
+    "extra": {
+      "profileLabel": "Pengaturan Profil",
+      "profileDesc": "Ubah info akun, bahasa, dan kata sandi",
+      "notificationsLabel": "Notifikasi",
+      "notificationsDesc": "Lihat peringatan stok menipis dan persetujuan yang menunggu Anda",
+      "themeLabel": "Ganti Tema",
+      "themeDesc": "Beralih antara mode terang dan gelap",
+      "logoutLabel": "Menu Akun & Keluar",
+      "logoutDesc": "Buka pengaturan profil atau keluar dari akun"
+    },
+    "features": {
+      "profile": {
+        "purpose": "Kelola info akun Anda sendiri: nama, foto, email, bahasa aplikasi, dan kata sandi.",
+        "flow": "Semua perubahan di sini cuma berlaku untuk akun Anda sendiri, tidak mempengaruhi pengguna lain.",
+        "steps": [
+          "Buka lewat menu profil di pojok kanan atas (klik nama/avatar Anda).",
+          "Ubah nama atau foto profil di bagian \"Info Personal\".",
+          "Ganti bahasa aplikasi (Indonesia/English) di bagian \"Bahasa\".",
+          "Update kata sandi di bagian \"Keamanan\" kalau perlu."
+        ],
+        "note": "Role/jabatan cuma bisa diubah oleh Admin, bukan oleh diri sendiri."
+      },
+      "notifications": {
+        "purpose": "Pemberitahuan real-time untuk hal yang perlu Anda ketahui, misalnya stok turun di bawah reorder point atau opname yang menunggu persetujuan.",
+        "flow": "Ikon lonceng menampilkan angka merah kalau ada notifikasi yang belum dibaca.",
+        "steps": [
+          "Klik ikon lonceng untuk melihat daftar notifikasi.",
+          "Klik salah satu notifikasi untuk langsung menuju halaman terkait.",
+          "Tandai semua sudah dibaca kalau daftarnya sudah penuh."
+        ],
+        "note": "Notifikasi muncul otomatis, tidak perlu dikirim manual."
+      },
+      "theme": {
+        "purpose": "Mengganti tampilan aplikasi antara mode terang dan gelap sesuai preferensi Anda.",
+        "flow": "Pilihan tema tersimpan di browser, jadi tetap sama setiap kali Anda membuka aplikasi lagi.",
+        "steps": [
+          "Buka menu pengguna (avatar di pojok kanan atas) lalu pilih Terang, Gelap, atau Sistem."
+        ],
+        "note": "Pengaturan ini cuma berlaku di perangkat/browser yang sedang dipakai."
+      },
+      "logout": {
+        "purpose": "Menu untuk membuka pengaturan profil atau keluar dari akun.",
+        "flow": "Klik nama/avatar Anda di pojok kanan atas untuk membuka menu ini.",
+        "steps": [
+          "Klik nama/avatar di pojok kanan atas.",
+          "Pilih \"Profile Settings\" untuk ubah info akun.",
+          "Pilih \"Sign Out\" untuk keluar - akan ada konfirmasi sebelum benar-benar keluar."
+        ],
+        "note": "Anda perlu login ulang setelah keluar untuk memakai aplikasi lagi."
+      },
+      "master-product": {
+        "purpose": "Daftar semua barang: produk induk, varian SKU, satuan, pemilik, supplier, dan customer.",
+        "flow": "Produk punya satu atau lebih SKU. Stok selalu dicatat dalam satuan dasar SKU, satuan lain (Pack, Box) hanya konversi.",
+        "steps": [
+          "Isi dulu Kategori, Satuan, dan Pemilik di tab masing-masing.",
+          "Klik \"Produk baru\", isi kode dan nama, lalu tulis atribut varian (misal warna: Hitam, Abu; ukuran: M, L).",
+          "Hilangkan centang kombinasi yang tidak dijual, lalu simpan.",
+          "Buka SKU untuk menambah barcode dan satuan kemasan (Box = 144 Pcs).",
+          "Centang SKU lalu \"Cetak label\" untuk label barcode atau QR."
+        ],
+        "note": "Satuan dasar tidak bisa diganti setelah SKU dibuat, karena semua stok tercatat dalam satuan itu."
+      },
+      "master-warehouse": {
+        "purpose": "Denah gudang: zona, lorong, rak, sampai bin tempat barang disimpan.",
+        "flow": "Tiap gudang otomatis punya bin penerimaan, staging, karantina, dan transit. Bin penyimpanan dibuat lewat generator atau satu per satu.",
+        "steps": [
+          "Buat gudang baru, kodenya jadi awalan semua lokasi.",
+          "Klik ikon grid untuk membuat bin massal, misal lorong 01-04, 10 rak, tingkat A-D.",
+          "Pilih zona atau lorong untuk melihat denah bin, warnanya menunjukkan seberapa penuh.",
+          "Ubah bin untuk mengatur kapasitas, kategori yang boleh, dan urutan picking.",
+          "Pilih lokasi lalu cetak label QR untuk ditempel di rak."
+        ],
+        "note": "Kode gudang terkunci setelah dibuat karena menjadi bagian dari kode semua lokasinya."
+      },
+      "goods-receipt": {
+        "purpose": "Mencatat barang yang datang: dari supplier, hasil produksi, atau retur, lengkap dengan hasil QC dan batch.",
+        "flow": "Draf bisa diubah kapan saja. Saat diposting, barang lolos QC masuk bin penerimaan, yang gagal masuk karantina, dan tugas putaway dibuat otomatis.",
+        "steps": [
+          "Klik \"Penerimaan baru\", pilih gudang, sumber, supplier, dan pemilik barang.",
+          "Scan barcode barang untuk menambah baris; scan lagi untuk menambah qty.",
+          "Isi qty yang gagal QC beserta alasannya, lalu no. batch dan tanggal kedaluwarsa kalau diminta.",
+          "Simpan draf atau langsung \"Posting ke stok\".",
+          "Buka penerimaan untuk menambah foto lampiran, misalnya kemasan rusak."
+        ],
+        "note": "Harga beli hanya terlihat dan bisa diisi oleh Manager dan Admin/Finance."
+      },
+      "putaway": {
+        "purpose": "Memindahkan barang dari dock penerimaan ke bin penyimpanan.",
+        "flow": "Tiap baris penerimaan yang diposting jadi satu tugas. Sistem menyarankan bin: yang sudah berisi SKU dan batch sama, lalu bin kosong yang cocok kategorinya, lalu yang terdekat.",
+        "steps": [
+          "Scan barang atau ketuk tugas di daftar.",
+          "Pilih bin rekomendasi, atau scan label QR bin lain.",
+          "Ubah qty kalau barang dibagi ke beberapa bin.",
+          "Ketuk \"Simpan ke bin ini\"."
+        ],
+        "note": "Bin yang penuh atau khusus kategori lain akan ditolak sistem."
+      },
+      "pick-list": {
+        "purpose": "Mengubah sales order jadi daftar ambil barang dengan rute jalan terpendek.",
+        "flow": "Stok dialokasikan FEFO (kedaluwarsa terdekat dulu, yang sudah kedaluwarsa dilewati) atau FIFO, lalu dipesan supaya tidak dijanjikan ke order lain. Rute lewat lorong berpola zig-zag.",
+        "steps": [
+          "Buat sales order atau terima dari POS/marketplace.",
+          "Centang order dari satu gudang, lalu \"Buat pick list\".",
+          "Petugas membuka pick list di HP, scan label bin lalu barcode barang di tiap stop.",
+          "Kalau barang kurang, isi qty sebenarnya dan alasannya."
+        ],
+        "note": "Stok yang kurang tetap membuat order terbuka untuk dialokasikan lagi nanti."
+      },
+      "dispatch": {
+        "purpose": "Mengecek, mengemas, dan menyerahkan barang ke kurir.",
+        "flow": "Order yang selesai diambil menunggu di staging. Packing wajib scan setiap barang; stok baru benar-benar berkurang saat dikirim.",
+        "steps": [
+          "Buka tab \"Siap packing\" dan pilih order.",
+          "Scan setiap barang; barang yang tidak ada di order atau kelebihan akan ditolak.",
+          "Isi berat, jumlah koli, dan dimensi, lalu \"Selesai packing\".",
+          "Di tab \"Siap kirim\", isi kurir dan no. resi lalu \"Kirim\"; surat jalan terbuka untuk dicetak."
+        ],
+        "note": "HPP dicatat otomatis saat barang dikirim."
+      },
+      "stock-transfer": {
+        "purpose": "Memindahkan stok antar-bin di satu gudang, atau mengirimnya ke gudang lain.",
+        "flow": "Pindah bin langsung selesai. Antar gudang: draf, kirim (stok masuk bin transit), lalu gudang tujuan menerima. Selisih kirim vs terima ditahan sampai manajer lain memutuskan.",
+        "steps": [
+          "Pindah bin: scan bin asal, pilih barang, isi qty, scan bin tujuan.",
+          "Antar gudang: manajer membuat draf dan menekan \"Kirim\".",
+          "Di gudang tujuan, tekan \"Terima\" dan isi qty yang benar-benar datang beserta alasan kalau kurang.",
+          "Manajer lain memutuskan selisihnya: hapuskan atau biarkan di transit."
+        ],
+        "note": "Petugas gudang hanya bisa pindah bin; transfer antar gudang dibuat manajer."
+      },
+      "stock-opname": {
+        "purpose": "Menghitung stok fisik dan menyesuaikan sistem dengan persetujuan manajer.",
+        "flow": "Saat opname dimulai, qty sistem dicatat dan bin dikunci. Petugas menghitung tanpa melihat qty sistem (hitung buta). Manajer melihat selisih dan nilainya, lalu menyetujui atau menolak.",
+        "steps": [
+          "Buat opname: pilih gudang, cakupan lokasi atau kategori.",
+          "Tekan \"Mulai hitung\".",
+          "Scan tiap bin, isi jumlah per barang, scan barang tak terduga.",
+          "Ajukan persetujuan setelah semua baris terhitung.",
+          "Manajer lain menyetujui; stok disesuaikan otomatis."
+        ],
+        "note": "Yang mengajukan tidak boleh menyetujui opnamenya sendiri."
+      },
+      "stock-audit": {
+        "purpose": "Melacak setiap perpindahan stok dan perubahan data master.",
+        "flow": "Mutasi tidak bisa diubah atau dihapus siapa pun. Kartu stok menunjukkan saldo awal, masuk, keluar, dan saldo berjalan per SKU.",
+        "steps": [
+          "Pilih rentang tanggal, SKU, jenis, atau nomor dokumen.",
+          "Buka tab \"Kartu stok\" dan pilih SKU untuk saldo berjalan.",
+          "Tab \"Audit master\" menunjukkan siapa mengubah produk, lokasi, hak akses, dan lainnya."
+        ],
+        "note": "Filter gudang di header juga berlaku di sini."
+      },
+      "dashboard": {
+        "purpose": "Ringkasan kondisi gudang dalam satu layar.",
+        "flow": "Semua angka dihitung dari satu panggilan ke database. Nilai uang hanya muncul untuk yang punya akses valuasi.",
+        "steps": [
+          "Pilih gudang di header untuk mempersempit angka.",
+          "Klik kartu untuk langsung ke halaman terkait.",
+          "Cek stok kritis dan batch yang segera kedaluwarsa setiap pagi."
+        ],
+        "note": "Tren nilai terisi dari snapshot harian."
+      },
+      "valuation": {
+        "purpose": "Nilai persediaan, HPP, koreksi harga penerimaan, dan kunci periode.",
+        "flow": "Biaya dihitung per SKU per pemilik lintas gudang. Barang titipan klien tidak masuk nilai aset.",
+        "steps": [
+          "Tab Nilai stok: pilih tanggal, metode, dan cara pengelompokan.",
+          "Tab HPP: pilih rentang tanggal.",
+          "Tab Koreksi harga: isi harga asli untuk penerimaan yang diposting tanpa harga.",
+          "Tab Kunci periode: kunci pembukuan sampai tanggal yang sudah ditutup."
+        ],
+        "note": "Membuka kunci periode hanya bisa dilakukan Admin."
+      },
+      "export": {
+        "purpose": "Unduh laporan untuk arsip atau dikirim ke pihak lain.",
+        "flow": "Laporan memakai filter gudang di header. Teks yang bisa dibaca sebagai rumus Excel diamankan otomatis.",
+        "steps": [
+          "Pilih jenis laporan.",
+          "Isi tanggal, SKU, atau sesi opname bila diminta.",
+          "Klik Excel atau PDF."
+        ],
+        "note": "Laporan valuasi dan HPP hanya untuk yang punya akses valuasi."
+      },
+      "integration": {
+        "purpose": "Hubungkan StockDesk dengan sistem lain dan atur siapa boleh apa.",
+        "flow": "API key untuk sistem yang membaca stok atau membuat order. Webhook mengirim kejadian ke sistem lain. Tab Pengguna mengatur akun dan akses.",
+        "steps": [
+          "Buat API key, pilih akses seperlunya, salin key saat muncul.",
+          "Tambah webhook dengan URL https dan pilih kejadiannya; simpan secret-nya.",
+          "Undang pengguna, beri role, lalu atur pengecualian akses bila perlu."
+        ],
+        "note": "Key dan secret hanya tampil sekali. Jika hilang, buat baru atau ganti secret."
+      }
+    },
+    "tour": {
+      "next": "Selanjutnya",
+      "prev": "Sebelumnya",
+      "done": "Selesai"
+    },
+    "tours": {
+      "profile": [
+        {
+          "title": "Foto Profil",
+          "desc": "Klik foto Anda untuk mengunggah foto baru."
+        },
+        {
+          "title": "Info Akun",
+          "desc": "Role dan status akun Anda (read-only)."
+        },
+        {
+          "title": "Email",
+          "desc": "Alamat email login Anda, bisa diganti di sini."
+        },
+        {
+          "title": "Info Personal",
+          "desc": "Ubah nama dan detail personal lainnya."
+        },
+        {
+          "title": "Bahasa",
+          "desc": "Pilih bahasa aplikasi: Indonesia atau English."
+        },
+        {
+          "title": "Keamanan",
+          "desc": "Ganti kata sandi akun Anda di sini."
+        }
+      ],
+      "notifications": [
+        {
+          "title": "Notifikasi",
+          "desc": "Klik untuk lihat pemberitahuan terbaru, seperti stok menipis atau persetujuan yang tertunda."
+        }
+      ],
+      "theme": [
+        {
+          "title": "Ganti Tema",
+          "desc": "Buka menu ini untuk memilih mode terang, gelap, atau ikuti sistem."
+        }
+      ],
+      "logout": [
+        {
+          "title": "Menu Akun",
+          "desc": "Klik untuk membuka pengaturan profil atau keluar dari akun."
+        }
+      ],
+      "master-product": [
+        {
+          "title": "Tab master data",
+          "desc": "Produk, kategori, satuan, pemilik, supplier, dan customer ada di sini."
+        },
+        {
+          "title": "Cari",
+          "desc": "Cari lewat kode, nama, SKU, atau barcode."
+        },
+        {
+          "title": "Aksi",
+          "desc": "Buat produk baru atau cetak label SKU yang dicentang."
+        }
+      ],
+      "master-warehouse": [
+        {
+          "title": "Gudang",
+          "desc": "Pilih gudang. Pilihan ini juga dipakai filter gudang di header."
+        },
+        {
+          "title": "Hierarki lokasi",
+          "desc": "Zona, lorong, rak, dan bin. Tombol di atas untuk menambah zona dan membuat bin massal."
+        },
+        {
+          "title": "Denah bin",
+          "desc": "Warna menunjukkan isi bin: kosong, di bawah 80%, di atas 80%, penuh."
+        }
+      ],
+      "goods-receipt": [
+        {
+          "title": "Penerimaan baru",
+          "desc": "Buat draf penerimaan barang di sini."
+        },
+        {
+          "title": "Cari",
+          "desc": "Cari lewat nomor GR, referensi PO, atau supplier."
+        },
+        {
+          "title": "Daftar penerimaan",
+          "desc": "Ketuk penerimaan untuk melihat detail, lampiran, dan progres putaway."
+        }
+      ],
+      "putaway": [
+        {
+          "title": "Scan barang",
+          "desc": "Scan barang di dock untuk langsung membuka tugasnya."
+        },
+        {
+          "title": "Tugas putaway",
+          "desc": "Tugas terlama di atas. Ketuk untuk memilih bin tujuan."
+        }
+      ],
+      "pick-list": [
+        {
+          "title": "Order dan pick list",
+          "desc": "Tab pertama untuk sales order, tab kedua untuk pick list yang sedang berjalan."
+        },
+        {
+          "title": "Aksi",
+          "desc": "Buat order baru, atau buat pick list dari order yang dicentang."
+        }
+      ],
+      "dispatch": [
+        {
+          "title": "Alur kirim",
+          "desc": "Siap packing, siap kirim, lalu terkirim."
+        }
+      ],
+      "stock-transfer": [
+        {
+          "title": "Dua jenis transfer",
+          "desc": "Pindah bin untuk dalam gudang, antar gudang untuk kirim ke gudang lain."
+        }
+      ],
+      "stock-opname": [
+        {
+          "title": "Opname baru",
+          "desc": "Buat sesi hitung untuk seluruh gudang atau sebagian."
+        },
+        {
+          "title": "Daftar opname",
+          "desc": "Ketuk untuk mulai menghitung atau menyetujui."
+        }
+      ],
+      "stock-audit": [
+        {
+          "title": "Mutasi, kartu stok, audit",
+          "desc": "Tiga cara melihat riwayat stok dan data."
+        },
+        {
+          "title": "Filter",
+          "desc": "Rentang tanggal, SKU, jenis, dan nomor dokumen."
+        }
+      ],
+      "dashboard": [
+        {
+          "title": "Angka utama",
+          "desc": "Klik kartu untuk membuka halaman terkait."
+        },
+        {
+          "title": "Stok kritis",
+          "desc": "SKU yang sudah menyentuh reorder point."
+        }
+      ],
+      "valuation": [
+        {
+          "title": "Empat tab",
+          "desc": "Nilai stok, HPP, koreksi harga, dan kunci periode."
+        }
+      ],
+      "export": [
+        {
+          "title": "Jenis laporan",
+          "desc": "Pilih laporan yang ingin diunduh."
+        },
+        {
+          "title": "Parameter",
+          "desc": "Isi tanggal atau SKU, lalu pilih Excel atau PDF."
+        }
+      ],
+      "integration": [
+        {
+          "title": "Tiga tab",
+          "desc": "API key, webhook, serta pengguna & akses."
+        },
+        {
+          "title": "API key",
+          "desc": "Buat key dan lihat kapan terakhir dipakai."
+        }
+      ]
+    },
+    "rolesTitle": "Alur kerja per peran",
+    "roles": {
+      "worker": {
+        "title": "Staf gudang",
+        "steps": [
+          "Terima barang: buat penerimaan, scan barang, isi batch dan kedaluwarsa, posting.",
+          "Putaway: scan barang di area terima, simpan ke bin yang disarankan.",
+          "Picking: buka pick list, ikuti rute, scan bin dan barang di setiap perhentian.",
+          "Packing & kirim: scan barang yang dipick, isi berat dan kurir, cetak surat jalan.",
+          "Opname: hitung bin yang ditugaskan tanpa melihat qty sistem, lalu ajukan."
+        ]
+      },
+      "manager": {
+        "title": "Manajer gudang",
+        "steps": [
+          "Pagi: cek dasbor untuk stok kritis, batch kedaluwarsa, dan putaway tertunda.",
+          "Buat sales order dan generate pick list per gudang.",
+          "Kirim transfer antar gudang dan setujui selisih penerimaan.",
+          "Mulai opname dan setujui atau tolak selisihnya (bukan hasil hitung sendiri).",
+          "Pantau log mutasi dan kartu stok bila ada yang janggal."
+        ]
+      },
+      "admin": {
+        "title": "Admin",
+        "steps": [
+          "Isi harga di penerimaan dan koreksi yang masih estimasi.",
+          "Periksa valuasi per tanggal dan HPP per periode, bandingkan FIFO dan rata-rata.",
+          "Kunci pembukuan sampai tanggal yang sudah ditutup.",
+          "Ekspor laporan untuk arsip atau akuntan.",
+          "Kelola pengguna, akses, API key, dan webhook."
+        ]
+      }
+    }
+  },
+  "pending": {
+    "title": "Akun belum diaktifkan",
+    "description": "Modul ini hadir di fase {{phase}}.",
+    "body": "Anda masuk sebagai {{email}}, tetapi Admin belum memberi peran. Hubungi Admin gudang Anda untuk mendapatkan akses.",
+    "signOut": "Keluar"
+  },
+  "labels": {
+    "barcode": "Barcode (Code128)",
+    "qr": "QR code",
+    "copies": "Salinan per item",
+    "kind": "Jenis label",
+    "print": "Cetak PDF",
+    "printCount": "Cetak label ({{count}})",
+    "select": "Pilih {{sku}} untuk label",
+    "sheetHint": "Kertas A4, 21 label per lembar (63,5 x 38,1 mm).",
+    "title": "Cetak {{count}} label",
+    "paper": "Kertas",
+    "paperA4": "A4, 3 x 7 label (63,5 x 38,1 mm)",
+    "paperThermal": "Thermal 50 x 30 mm, satu label per lembar"
+  },
+  "master": {
+    "deleteConfirm": "Hapus {{name}}? Data yang masih dipakai tidak bisa dihapus.",
+    "emptyList": "Belum ada data",
+    "fields": {
+      "code": "Kode",
+      "name": "Nama",
+      "owner_type": "Tipe pemilik",
+      "contact_name": "Kontak",
+      "phone": "Telepon",
+      "email": "Email",
+      "address": "Alamat"
+    },
+    "ownerType": {
+      "in_house": "Milik sendiri",
+      "client": "Klien (konsinyasi)"
+    },
+    "subtitles": {
+      "products": "Produk induk dan varian SKU-nya.",
+      "categories": "Kelompok barang untuk laporan dan aturan rak.",
+      "uoms": "Satuan yang bisa dipakai SKU (Pcs, Box, Kg...).",
+      "owners": "Pemilik barang: brand sendiri atau klien titipan.",
+      "suppliers": "Pemasok untuk penerimaan barang.",
+      "customers": "Pelanggan untuk sales order."
+    },
+    "filters": {
+      "dateRange": "Rentang tanggal"
+    }
+  },
+  "products": {
+    "new": "Produk baru",
+    "edit": "Ubah produk",
+    "addSku": "SKU baru untuk {{product}}",
+    "addSkuShort": "Tambah SKU",
+    "allCategories": "Semua kategori",
+    "allOwners": "Semua pemilik",
+    "baseUomHint": "Stok disimpan dalam satuan ini dan tidak bisa diganti nanti.",
+    "baseUomLocked": "Satuan dasar terkunci setelah SKU dibuat.",
+    "batch": "Batch",
+    "expiry": "Kedaluwarsa",
+    "empty": "Belum ada produk",
+    "emptyHint": "Buat produk pertama, variannya jadi SKU.",
+    "noBarcode": "tanpa barcode",
+    "ownerHint": "Barang klien tidak dihitung sebagai aset.",
+    "searchPlaceholder": "Cari kode, nama, SKU, barcode...",
+    "showSkus": "Tampilkan SKU",
+    "skuCount": "{{count}} SKU",
+    "skuDefaults": "Pengaturan awal SKU",
+    "fields": {
+      "code": "Kode produk",
+      "name": "Nama",
+      "category": "Kategori",
+      "owner": "Pemilik",
+      "description": "Deskripsi",
+      "barcode": "Barcode",
+      "baseUom": "Satuan dasar",
+      "skuCode": "Kode SKU",
+      "trackBatch": "Lacak batch/lot",
+      "trackExpiry": "Lacak kedaluwarsa (FEFO)",
+      "safety_stock": "Safety stock",
+      "reorder_point": "Reorder point",
+      "reorder_qty": "Qty reorder",
+      "weight_kg": "Berat (kg)",
+      "length_cm": "Panjang (cm)",
+      "width_cm": "Lebar (cm)",
+      "height_cm": "Tinggi (cm)"
+    },
+    "tabs": {
+      "products": "Produk",
+      "categories": "Kategori",
+      "uoms": "Satuan",
+      "owners": "Pemilik",
+      "suppliers": "Supplier",
+      "customers": "Customer"
+    },
+    "uom": {
+      "title": "Satuan kemasan",
+      "add": "Tambah satuan",
+      "afterSave": "Satuan kemasan (Pack, Box...) bisa ditambah setelah SKU tersimpan.",
+      "baseIs": "Satuan dasar: {{uom}} (faktor 1). Faktor = isi dalam satuan dasar.",
+      "factor": "Faktor",
+      "sample": "Contoh qty",
+      "unit": "Satuan",
+      "errors": {
+        "noBase": "Satuan dasar harus berfaktor 1.",
+        "badFactor": "Faktor harus bilangan bulat positif.",
+        "duplicateUnit": "Satuan yang sama dipakai dua kali.",
+        "duplicateFactor": "Dua satuan punya faktor sama."
+      }
+    },
+    "variants": {
+      "title": "Varian",
+      "attribute": "Atribut",
+      "values": "Nilai, pisahkan koma",
+      "addAttribute": "Tambah atribut",
+      "preview": "{{count}} SKU akan dibuat"
+    },
+    "import": {
+      "button": "Impor",
+      "title": "Impor produk dari Excel",
+      "desc": "Pakai file hasil Ekspor sebagai template. Kolom wajib: {{columns}}. Maks 5 MB dan 5000 baris.",
+      "choose": "Pilih file .xlsx",
+      "tooBig": "File lebih dari 5 MB",
+      "unreadable": "File tidak bisa dibaca sebagai .xlsx",
+      "validRows": "{{count}} baris siap diimpor",
+      "fixFirst": "{{count}} baris bermasalah. Perbaiki dulu, impor berjalan semua atau tidak sama sekali.",
+      "rowError": "Baris {{row}}: {{message}}",
+      "confirm": "Impor {{count}} baris",
+      "done": "{{count}} baris diimpor",
+      "another": "Pilih file lain"
+    }
+  },
+  "warehouses": {
+    "title": "Gudang",
+    "subtitle": "Gudang dan hierarki zona, lorong, rak, bin.",
+    "new": "Gudang baru",
+    "edit": "Ubah gudang",
+    "all": "Semua gudang",
+    "filter": "Filter gudang",
+    "empty": "Belum ada gudang",
+    "emptyHint": "Bin penerimaan, staging, karantina, dan transit dibuat otomatis.",
+    "codeHint": "Jadi awalan kode lokasi, tidak bisa diubah nanti.",
+    "codeLocked": "Kode gudang terkunci.",
+    "addNode": "Tambah {{level}}",
+    "anyCategory": "Semua kategori boleh",
+    "binCount": "{{bins}} bin, {{storage}} untuk simpan/ambil",
+    "deleteConfirm": "Hapus {{code}}? Lokasi yang masih punya anak atau stok tidak bisa dihapus.",
+    "gridHint": "Belum ada lorong atau bin di gudang ini.",
+    "selectHint": "Pilih lokasi di daftar kiri.",
+    "pickSequenceHint": "Urutan jalan saat picking, kecil dulu.",
+    "toggle": "Buka/tutup",
+    "fields": {
+      "code": "Kode",
+      "name": "Nama",
+      "address": "Alamat",
+      "type": "Tipe",
+      "binType": "Tipe bin",
+      "maxQty": "Kapasitas (satuan dasar)",
+      "maxWeight": "Beban maks (kg)",
+      "pickSequence": "Urutan picking",
+      "categories": "Kategori yang boleh",
+      "coords": "Koordinat"
+    },
+    "types": {
+      "main": "Gudang utama",
+      "store": "Toko",
+      "transit": "Transit"
+    },
+    "levels": {
+      "zone": "Zona",
+      "aisle": "Lorong",
+      "rack": "Rak",
+      "bin": "Bin"
+    },
+    "binTypes": {
+      "receiving": "Penerimaan",
+      "storage": "Simpan",
+      "picking": "Picking",
+      "staging": "Staging",
+      "dispatch": "Pengiriman",
+      "quarantine": "Karantina",
+      "in_transit": "Dalam perjalanan"
+    },
+    "fill": {
+      "empty": "Kosong",
+      "low": "< 80%",
+      "high": "≥ 80%",
+      "full": "Penuh",
+      "unknown": "Tanpa kapasitas"
+    },
+    "binsGenerated": "Bin dibuat",
+    "generator": {
+      "title": "Buat bin massal",
+      "zone": "Zona",
+      "aisles": "Lorong",
+      "racks": "Jumlah rak per lorong",
+      "levels": "Tingkat per rak",
+      "rangeHint": "Contoh: A-D, 01-04, atau A,C,F",
+      "preview": "{{total}} bin, contoh kode {{example}}. Yang sudah ada dilewati.",
+      "run": "Buat bin"
+    },
+    "contents": "Isi {{qty}} dari kapasitas {{max}}",
+    "reserved": "{{qty}} dipesan",
+    "binEmpty": "Bin kosong.",
+    "map": {
+      "modes": {
+        "fill": "Utilisasi",
+        "expiry": "Kedaluwarsa",
+        "activity": "Aktivitas pick"
+      },
+      "expiry": {
+        "full": "Sudah lewat",
+        "high": "Segera kedaluwarsa",
+        "low": "Aman",
+        "unknown": "Tanpa expiry",
+        "empty": "Kosong"
+      },
+      "activity": {
+        "none": "Tidak ada pick",
+        "low": "Jarang",
+        "high": "Paling sering (30 hari)"
+      },
+      "picks": "{{count}}× pick",
+      "dock": "Dock",
+      "noRoute": "Tanpa rute picking",
+      "route": "{{no}} · {{count}} titik"
+    },
+    "coordsHint": "Format \"lat, lng\". Klik kanan lokasi di Google Maps lalu klik angkanya untuk menyalin."
+  },
+  "attachments": {
+    "add": "Lampiran",
+    "uploaded": "Lampiran terunggah",
+    "tooLarge": "Ukuran file maksimal {{mb}} MB."
+  },
+  "batch": {
+    "exp": "exp {{date}}"
+  },
+  "scanner": {
+    "camera": "Scan pakai kamera",
+    "placeholder": "Scan atau ketik kode, lalu Enter",
+    "unknown": "Kode {{code}} tidak dikenal",
+    "unsupported": "Browser ini belum mendukung scan kamera. Pakai scanner atau ketik kodenya."
+  },
+  "skuPicker": {
+    "placeholder": "Pilih SKU",
+    "search": "Cari SKU, nama, barcode..."
+  },
+  "putaway": {
+    "title": "Putaway",
+    "subtitle": "Pindahkan barang dari dock penerimaan ke bin simpan.",
+    "confirm": "Simpan ke bin ini",
+    "done": "Barang tersimpan",
+    "empty": "Tidak ada tugas putaway",
+    "emptyHint": "Tugas muncul setelah penerimaan barang diposting.",
+    "free": "sisa {{qty}}",
+    "noSuggestion": "Tidak ada bin yang cocok, scan bin tujuan.",
+    "noTaskFor": "Tidak ada tugas untuk {{code}}",
+    "offList": "Bukan rekomendasi, tetap boleh",
+    "qty": "Qty (satuan dasar)",
+    "remaining": "Sisa {{qty}}",
+    "scanBin": "Scan label bin tujuan",
+    "scanItem": "Scan barang untuk membuka tugasnya",
+    "suggestions": "Rekomendasi bin",
+    "target": "Tujuan:",
+    "unknownBin": "Bin {{code}} tidak ada di gudang ini",
+    "rank": {
+      "1": "SKU & batch sama",
+      "2": "Bin kosong",
+      "3": "Terdekat"
+    }
+  },
+  "receipts": {
+    "title": "Penerimaan Barang",
+    "subtitle": "Barang masuk dari supplier, produksi, atau retur.",
+    "new": "Penerimaan baru",
+    "empty": "Belum ada penerimaan",
+    "search": "Cari nomor GR, referensi, supplier...",
+    "addLine": "Tambah baris",
+    "saveDraft": "Simpan draf",
+    "post": "Posting ke stok",
+    "cancel": "Batalkan",
+    "posted": "Penerimaan diposting",
+    "cancelled": "Penerimaan dibatalkan",
+    "lineCount": "{{count}} baris",
+    "ownerLocked": "Kosongkan baris dulu untuk ganti pemilik.",
+    "rejectPlaceholder": "Mis. kemasan sobek",
+    "rejectedLine": "{{qty}} gagal QC: {{reason}}",
+    "putawayProgress": "Putaway {{done}} / {{total}}",
+    "scanPlaceholder": "Scan barcode barang untuk menambah baris",
+    "fields": {
+      "warehouse": "Gudang",
+      "source": "Sumber",
+      "supplier": "Supplier",
+      "owner": "Pemilik barang",
+      "date": "Tanggal terima",
+      "reference": "No. PO / surat jalan",
+      "note": "Catatan",
+      "sku": "SKU",
+      "uom": "Satuan",
+      "qty": "Qty diterima",
+      "rejected": "Gagal QC",
+      "rejectReason": "Alasan",
+      "batch": "No. batch/lot",
+      "mfgDate": "Tgl produksi",
+      "expiryDate": "Tgl kedaluwarsa",
+      "unitCost": "Harga per satuan",
+      "customer": "Pelanggan"
+    },
+    "sources": {
+      "supplier": "Supplier",
+      "production": "Produksi",
+      "customer_return": "Retur pelanggan",
+      "client_inbound": "Titipan klien"
+    },
+    "status": {
+      "draft": "Draf",
+      "received": "Diterima",
+      "putaway_done": "Selesai putaway",
+      "cancelled": "Dibatalkan"
+    },
+    "problems": {
+      "sku": "Pilih SKU dan satuan",
+      "qty": "Qty harus lebih dari 0",
+      "reject": "Gagal QC tidak boleh melebihi qty diterima",
+      "reason": "Isi alasan gagal QC",
+      "batch": "SKU ini wajib no. batch",
+      "expiry": "SKU ini wajib tgl kedaluwarsa",
+      "supplier": "Pilih supplier",
+      "header": "Lengkapi gudang, pemilik, dan supplier",
+      "fixFirst": "Masih ada yang perlu dibetulkan sebelum posting",
+      "customer": "Pilih pelanggan yang meretur",
+      "owner": "Pilih owner (titipan klien wajib owner klien)"
+    },
+    "confirm": {
+      "post": {
+        "title": "Posting penerimaan?",
+        "body": "Stok langsung bertambah di bin penerimaan dan tugas putaway dibuat. Setelah diposting, penerimaan tidak bisa diubah.",
+        "action": "Posting"
+      },
+      "cancel": {
+        "title": "Batalkan penerimaan?",
+        "body": "Draf ini tidak akan pernah menambah stok.",
+        "action": "Batalkan"
+      },
+      "delete": {
+        "title": "Hapus penerimaan?",
+        "body": "Draf dan barisnya dihapus permanen.",
+        "action": "Hapus"
+      }
+    },
+    "costs": {
+      "open": "Isi harga",
+      "title": "Harga beli per baris",
+      "hint": "Harga per satuan yang dipakai di baris. Baris yang dibiarkan kosong diposting dengan harga beli terakhir dan ditandai estimasi.",
+      "perUnit": "Harga per satuan untuk {{line}}"
+    },
+    "emptyHint": "Catat barang yang datang dari supplier, produksi, atau retur."
+  },
+  "orders": {
+    "new": "Sales order baru",
+    "subtitle": "Pesanan dari manual, POS, atau marketplace. Pilih beberapa lalu buat pick list.",
+    "empty": "Belum ada sales order",
+    "search": "Cari nomor SO, customer, referensi...",
+    "cancel": "Batalkan order",
+    "cancelled": "Order dibatalkan",
+    "cancelTitle": "Batalkan {{no}}?",
+    "cancelBody": "Order ini tidak akan diproses lagi.",
+    "partlyAllocated": "Baru teralokasi {{got}} dari {{need}}; sisanya menunggu stok.",
+    "scanPlaceholder": "Scan barang untuk menambah baris",
+    "fields": {
+      "channel": "Kanal",
+      "customer": "Customer",
+      "date": "Tanggal order",
+      "qty": "Qty",
+      "reference": "No. referensi",
+      "shipTo": "Alamat kirim"
+    },
+    "channels": {
+      "manual": "Manual",
+      "pos": "POS",
+      "marketplace": "Marketplace",
+      "api": "API"
+    },
+    "problems": {
+      "customer": "Isi nama customer",
+      "fixFirst": "Lengkapi customer dan baris order dulu"
+    },
+    "status": {
+      "open": "Terbuka",
+      "allocated": "Teralokasi",
+      "picking": "Sedang diambil",
+      "picked": "Siap packing",
+      "packed": "Sudah dikemas",
+      "dispatched": "Terkirim",
+      "cancelled": "Dibatalkan"
+    }
+  },
+  "picking": {
+    "tabs": {
+      "orders": "Sales order",
+      "lists": "Pick list"
+    },
+    "subtitle": "Rute ambil barang, stop terdekat berikutnya di atas.",
+    "empty": "Tidak ada pick list aktif",
+    "emptyHint": "Buat dari tab Sales order.",
+    "generate": "Buat pick list ({{count}})",
+    "generated": "Pick list dibuat",
+    "oneWarehouse": "Pilih order dari satu gudang saja",
+    "select": "Pilih {{no}}",
+    "showAll": "Tampilkan semua",
+    "activeOnly": "Hanya yang aktif",
+    "progress": "{{done}}/{{total}} stop",
+    "stop": "Stop {{seq}}",
+    "allDone": "Semua stop selesai. Barang ada di staging, siap packing.",
+    "stepBin": "Bin sesuai",
+    "stepItem": "Barang sesuai",
+    "scanBin": "Scan label bin",
+    "scanItem": "Scan barcode barang",
+    "wrongBin": "{{code}} bukan bin {{bin}}",
+    "wrongItem": "{{code}} bukan barang untuk stop ini",
+    "qtyPicked": "Qty diambil",
+    "planned": "Rencana {{qty}}",
+    "shortReason": "Alasan kurang ambil",
+    "shortPlaceholder": "Mis. barang rusak, stok fisik kurang",
+    "confirm": "Konfirmasi ambil",
+    "confirmShort": "Konfirmasi kurang ambil",
+    "confirmed": "Tercatat",
+    "cancelList": "Batalkan pick list",
+    "cancelled": "Pick list dibatalkan",
+    "cancelTitle": "Batalkan pick list?",
+    "cancelBody": "Stop yang belum diambil dilepas dan order kembali menunggu alokasi.",
+    "lineStatus": {
+      "picked": "Diambil",
+      "short": "Kurang",
+      "cancelled": "Batal"
+    },
+    "status": {
+      "open": "Terbuka",
+      "picking": "Berjalan",
+      "done": "Selesai",
+      "cancelled": "Dibatalkan"
+    }
+  },
+  "dispatch": {
+    "title": "Packing & Pengiriman",
+    "subtitle": "Verifikasi scan, kemas, lalu serahkan ke kurir dengan surat jalan.",
+    "tabs": {
+      "pack": "Siap packing ({{count}})",
+      "dispatch": "Siap kirim ({{count}})",
+      "done": "Terkirim"
+    },
+    "nothingToPack": "Tidak ada yang perlu dikemas",
+    "nothingToPackHint": "Order muncul di sini setelah picking selesai.",
+    "nothingToDispatch": "Tidak ada paket menunggu kurir",
+    "noneDispatched": "Belum ada pengiriman",
+    "startPacking": "Kemas",
+    "packTitle": "Packing {{no}}",
+    "scanItem": "Scan setiap barang sebelum masuk kemasan",
+    "notInOrder": "{{code}} tidak ada di order ini",
+    "tooMany": "{{sku}} sudah lengkap",
+    "less": "Kurangi",
+    "more": "Tambah",
+    "weight": "Berat (kg)",
+    "packages": "Koli",
+    "dimensions": "Dimensi (cm)",
+    "pack": "Selesai packing",
+    "scanAll": "Scan semua barang dulu",
+    "packed": "Paket siap kirim",
+    "packageCount": "{{count}} koli",
+    "dispatch": "Kirim",
+    "dispatchTitle": "Kirim {{no}}",
+    "courier": "Kurir",
+    "trackingNo": "No. resi",
+    "dispatchHint": "Stok langsung berkurang dan surat jalan dibuka untuk dicetak.",
+    "dispatched": "Terkirim",
+    "printDo": "Cetak surat jalan",
+    "trackHint": "Buka halaman lacak kurir (resi otomatis disalin)",
+    "trackingCopied": "Resi {{no}} disalin, tempel di halaman kurir"
+  },
+  "transfers": {
+    "title": "Transfer Stok",
+    "subtitle": "Pindah antar-bin di satu gudang, atau kirim antar gudang lewat bin transit.",
+    "tabs": {
+      "bin": "Pindah bin",
+      "inter": "Antar gudang"
+    },
+    "binHint": "Gudang {{wh}}. Ganti gudang lewat filter di header.",
+    "scanFrom": "Scan bin asal",
+    "scanTo": "Scan bin tujuan",
+    "from": "Dari",
+    "to": "Ke",
+    "change": "Ganti",
+    "binEmpty": "Tidak ada stok bebas di bin ini.",
+    "qty": "Qty (satuan dasar)",
+    "note": "Catatan",
+    "move": "Pindahkan",
+    "moved": "Stok dipindahkan",
+    "noBinMoves": "Belum ada perpindahan bin",
+    "newInter": "Transfer antar gudang",
+    "fromWarehouse": "Dari gudang",
+    "toWarehouse": "Ke gudang",
+    "sameWarehouse": "Gudang tujuan harus berbeda",
+    "source": "Sumber stok",
+    "pickSource": "Pilih bin · SKU · batch",
+    "saveDraft": "Simpan draf",
+    "noInter": "Belum ada transfer antar gudang",
+    "noInterHint": "Manager membuat draf, lalu mengirim; gudang tujuan menerima.",
+    "send": "Kirim",
+    "sent": "Dikirim {{qty}}",
+    "receive": "Terima",
+    "cancel": "Batalkan",
+    "receiveTitle": "Terima {{no}}",
+    "qtyReceived": "Qty diterima",
+    "reason": "Alasan selisih",
+    "reasonPlaceholder": "Mis. hilang di jalan, rusak",
+    "confirmReceive": "Konfirmasi terima",
+    "received": "Transfer diterima",
+    "decided": "Keputusan tersimpan",
+    "cancelled": "Transfer dibatalkan",
+    "variancePending": "Selisih {{qty}} menunggu",
+    "writeOff": "Hapuskan",
+    "keepInTransit": "Biarkan di transit",
+    "writtenOff": "Dihapuskan",
+    "status": {
+      "draft": "Draf",
+      "in_transit": "Dalam perjalanan",
+      "received": "Diterima",
+      "done": "Selesai",
+      "cancelled": "Dibatalkan"
+    },
+    "confirm": {
+      "send": {
+        "title": "Kirim {{no}}?",
+        "body": "Stok keluar dari bin asal ke bin transit dan draf tidak bisa diubah lagi.",
+        "action": "Kirim"
+      },
+      "cancel": {
+        "title": "Batalkan {{no}}?",
+        "body": "Draf ini tidak akan memindahkan stok.",
+        "action": "Batalkan"
+      }
+    }
+  },
+  "counts": {
+    "title": "Stock Opname",
+    "subtitle": "Hitung fisik, selisih disetujui manajer lalu stok disesuaikan.",
+    "new": "Opname baru",
+    "empty": "Belum ada stock opname",
+    "scope": "Cakupan lokasi",
+    "wholeWarehouse": "Seluruh gudang",
+    "partial": "{{count}} lokasi",
+    "category": "Kategori",
+    "blind": "Hitung buta",
+    "blindHint": "Petugas tidak melihat qty sistem, jadi angka dari hasil hitung sungguhan.",
+    "blindOn": "Hitung buta",
+    "notePlaceholder": "Mis. opname bulanan zona A",
+    "start": "Mulai hitung",
+    "started": "Opname dimulai, bin terkunci",
+    "startHint": "Saat dimulai, qty sistem dicatat dan bin dalam cakupan dikunci: tidak ada barang masuk/keluar sampai opname ditutup.",
+    "progress": "{{done}}/{{total}} baris terhitung",
+    "scanBin": "Scan bin yang dihitung",
+    "scanItem": "Scan barang yang ditemukan",
+    "otherBin": "Bin lain",
+    "binNotInCount": "{{code}} tidak termasuk opname ini",
+    "binExpectedEmpty": "Menurut catatan bin ini kosong. Scan barang yang ada.",
+    "counted": "Hasil hitung",
+    "system": "sistem {{qty}}",
+    "recorded": "Tercatat",
+    "foundItem": "Barang tak terduga: {{sku}}",
+    "addFound": "Tambah",
+    "allLines": "Semua bin",
+    "submit": "Ajukan persetujuan",
+    "submitted": "Opname diajukan",
+    "countAllFirst": "Masih {{left}} baris belum dihitung",
+    "waitingApproval": "Menunggu persetujuan manajer.",
+    "varianceSummary": "{{lines}} dari {{total}} baris berselisih",
+    "bin": "Bin",
+    "systemCol": "Sistem",
+    "variance": "Selisih",
+    "value": "Nilai",
+    "approve": "Setujui & sesuaikan stok",
+    "approved": "Stok disesuaikan",
+    "reject": "Tolak",
+    "rejectReason": "Alasan menolak (wajib)",
+    "closed": "Opname ditutup",
+    "rejectedBecause": "Ditolak: {{reason}}",
+    "ownCount": "Anda yang mengajukan opname ini; manajer lain yang harus menyetujui.",
+    "cancel": "Batalkan opname",
+    "cancelTitle": "Batalkan opname?",
+    "cancelBody": "Bin dibuka kembali dan stok tidak diubah.",
+    "status": {
+      "draft": "Draf",
+      "counting": "Sedang dihitung",
+      "submitted": "Menunggu persetujuan",
+      "approved": "Disetujui",
+      "rejected": "Ditolak",
+      "cancelled": "Dibatalkan"
+    },
+    "emptyHint": "Mulai sesi hitung untuk mencocokkan stok fisik dengan sistem."
+  },
+  "audit": {
+    "title": "Log Mutasi & Audit",
+    "subtitle": "Catatan permanen setiap perpindahan stok dan perubahan data master.",
+    "tabs": {
+      "movements": "Mutasi",
+      "card": "Kartu stok",
+      "audit": "Audit master"
+    },
+    "allTypes": "Semua jenis",
+    "refSearch": "No. dokumen",
+    "when": "Waktu",
+    "type": "Jenis",
+    "route": "Dari → ke",
+    "qty": "Qty",
+    "ref": "Dokumen",
+    "by": "Oleh",
+    "system": "sistem",
+    "date": "Tanggal",
+    "in": "Masuk",
+    "out": "Keluar",
+    "balance": "Saldo ({{uom}})",
+    "noMovements": "Tidak ada mutasi di rentang ini",
+    "noAudit": "Tidak ada perubahan di rentang ini",
+    "pickSku": "Pilih SKU",
+    "pickSkuHint": "Kartu stok menampilkan saldo awal, masuk, keluar, dan saldo berjalan satu SKU.",
+    "types": {
+      "opening": "Saldo awal",
+      "receipt": "Penerimaan",
+      "qc_reject": "Gagal QC",
+      "putaway": "Putaway",
+      "bin_transfer": "Pindah bin",
+      "pick": "Picking",
+      "dispatch": "Pengiriman",
+      "transfer_out": "Transfer keluar",
+      "transfer_in": "Transfer masuk",
+      "adjustment": "Penyesuaian",
+      "return": "Retur"
+    },
+    "actions": {
+      "insert": "buat",
+      "update": "ubah",
+      "delete": "hapus",
+      "create": "buat"
+    },
+    "allUsers": "Semua pengguna",
+    "user": "Pengguna",
+    "batchSearch": "No. batch"
+  },
+  "dashboard": {
+    "assetValue": "Nilai aset stok",
+    "activeSkus": "SKU aktif",
+    "belowReorder": "Di bawah reorder point",
+    "expiring": "Kedaluwarsa ≤ {{days}} hari",
+    "putawayPending": "Putaway tertunda",
+    "pickListsToday": "Pick list hari ini",
+    "countAccuracy": "Akurasi opname terakhir",
+    "trend": "Nilai stok 6 bulan",
+    "trendHint": "Nilai akhir bulan dari snapshot harian, titik terakhir hari ini.",
+    "trendEmpty": "Belum ada snapshot. Grafik terisi setelah job harian berjalan.",
+    "movers": "Fast & slow moving",
+    "moversHint": "Qty terkirim 90 hari terakhir.",
+    "fast": "Fast",
+    "slow": "Slow",
+    "noMovement": "Belum ada pergerakan",
+    "outQty": "Keluar",
+    "onHand": "Stok",
+    "criticalStock": "Stok kritis",
+    "noCritical": "Semua SKU di atas reorder point",
+    "reorderAt": "ROP {{rop}} · order {{qty}}",
+    "expiringSoon": "Segera kedaluwarsa",
+    "noExpiring": "Tidak ada batch yang mendekati kedaluwarsa",
+    "expired": "Sudah lewat",
+    "turnover": "Perputaran per kategori",
+    "turnoverHint": "Qty keluar 90 hari dibagi stok sekarang.",
+    "cogsMonth": "HPP bulan ini",
+    "lockedUntil": "Buku terkunci s.d. {{date}}",
+    "outOfStock": "Stok habis",
+    "dispatchedToday": "Dikirim hari ini",
+    "flow": "Masuk vs keluar, 30 hari",
+    "flowHint": "Unit diterima (termasuk reject QC) dan dikirim per hari.",
+    "flowIn": "Diterima",
+    "flowOut": "Dikirim",
+    "queue": "Menunggu tindakan",
+    "queueHint": "Pekerjaan terbuka per tahap; klik untuk membuka.",
+    "queueEmpty": "Tidak ada yang menunggu",
+    "queueItems": {
+      "receipt_drafts": "Draft penerimaan barang",
+      "orders_open": "Order untuk dialokasikan",
+      "pick_lists_open": "Pick list untuk dipick",
+      "to_pack": "Order untuk dipacking",
+      "to_dispatch": "Paket untuk dikirim",
+      "in_transit": "Transfer dalam perjalanan",
+      "variances": "Selisih transfer perlu keputusan",
+      "counts_active": "Opname berjalan",
+      "counts_submitted": "Opname perlu disetujui",
+      "estimated_costs": "Penerimaan dengan biaya estimasi",
+      "webhooks_failed": "Pengiriman webhook gagal"
+    },
+    "utilization": "Pemakaian bin",
+    "utilizationHint": "Bin storage dan picking yang berisi stok.",
+    "noBins": "Belum ada bin storage",
+    "binsUsed": "{{used}}/{{bins}} bin",
+    "fill": "{{pct}}% kapasitas bin terisi",
+    "recent": "Aktivitas terbaru",
+    "recentHint": "Pergerakan stok terakhir.",
+    "criticalHint": "{{count}} SKU di bawah reorder point. Label: stok / reorder point.",
+    "legendOut": "Habis",
+    "legendOnHand": "Stok tersedia",
+    "legendRop": "Reorder point",
+    "expiredAgo": "lewat {{count}} hari",
+    "expiresToday": "hari ini",
+    "daysLeft": "{{count}} hari lagi",
+    "today": "Hari ini",
+    "expiringHint": "{{count}} batch berstok, yang terdekat di atas.",
+    "network": {
+      "title": "Jaringan gudang",
+      "hint": "Klik titik untuk detail gudang, arahkan kursor ke garis untuk detail transfer.",
+      "legendDone": "Transfer diterima (30 hari)",
+      "legendMoving": "Transfer masih di jalan",
+      "inTransit": "{{count}} transfer di jalan · {{qty}} pcs",
+      "received": "{{count}} transfer diterima (30 hari)",
+      "stock": "{{qty}} pcs · {{skus}} SKU",
+      "openOrders": "{{count}} pesanan belum dikirim",
+      "unpinned": "Belum ada lokasi: {{codes}}.",
+      "setPins": "Atur di Master Data › Gudang",
+      "legendMain": "Gudang utama",
+      "legendStore": "Toko / transit",
+      "legendSize": "Makin besar = stok makin banyak",
+      "listTitle": "Daftar gudang",
+      "listHint": "Klik untuk menuju lokasinya di peta. Bar = pemakaian bin.",
+      "incoming": "{{count}} kiriman menuju"
+    }
+  },
+  "valuation": {
+    "title": "Valuasi & Keuangan",
+    "subtitle": "Nilai persediaan, HPP, koreksi harga, dan kunci periode.",
+    "tabs": {
+      "value": "Nilai stok",
+      "cogs": "HPP",
+      "costs": "Koreksi harga",
+      "lock": "Kunci periode"
+    },
+    "item": "Item",
+    "qty": "Qty",
+    "unitCost": "Harga satuan",
+    "value": "Nilai",
+    "total": "Total",
+    "kind": "Jenis",
+    "kinds": {
+      "sale": "Penjualan",
+      "adjustment": "Penyesuaian",
+      "revaluation": "Revaluasi"
+    },
+    "methods": {
+      "fifo": "FIFO",
+      "average": "Rata-rata"
+    },
+    "methodDesc": {
+      "fifo": "Barang yang masuk duluan dianggap keluar duluan. Nilai sisa mengikuti harga terbaru.",
+      "average": "Harga rata-rata bergerak, dihitung ulang setiap penerimaan."
+    },
+    "method": "Metode valuasi",
+    "methodHint": "Metode resmi untuk HPP dan laporan. Laporan tetap bisa menampilkan metode lain sebagai pembanding.",
+    "groupBy": "Kelompokkan",
+    "groups": {
+      "sku": "Per SKU & gudang",
+      "category": "Per kategori",
+      "owner": "Per pemilik",
+      "warehouse": "Per gudang"
+    },
+    "asOf": "Per tanggal",
+    "empty": "Tidak ada stok di tanggal ini",
+    "consignment": "Barang titipan klien",
+    "consignmentHint": "Milik klien, ditampilkan qty saja dan tidak masuk nilai aset.",
+    "noCogs": "Tidak ada HPP di rentang ini",
+    "noEstimates": "Semua penerimaan sudah berharga",
+    "noEstimatesHint": "Penerimaan yang diposting tanpa harga muncul di sini untuk dikoreksi.",
+    "estimatedAt": "sementara {{cost}}",
+    "pricePer": "Harga per {{uom}}",
+    "revalue": "Koreksi",
+    "locks": "Kunci periode",
+    "locksHint": "Mutasi, COGS, revaluasi, dan persetujuan bertanggal sampai tanggal kunci ditolak.",
+    "lock": "Kunci",
+    "unlock": "Buka kunci",
+    "unlockTitle": "Mundurkan kunci ke {{date}}?",
+    "unlockBody": "Transaksi bertanggal setelah tanggal ini bisa masuk lagi dan laporan yang sudah dikirim bisa berubah. Tercatat di audit log.",
+    "expiryDays": "Peringatan kedaluwarsa (hari)",
+    "adminOnly": "Hanya Admin yang bisa mengubah pengaturan ini.",
+    "lockedUntil": "Terkunci sampai {{date}}",
+    "nothingLocked": "Belum ada periode yang dikunci.",
+    "lockThrough": "Kunci sampai tanggal",
+    "unlockAll": "Buka semua",
+    "unlockAllTitle": "Buka semua periode?",
+    "unlockAdminOnly": "Hanya Admin yang bisa memundurkan tanggal kunci."
+  },
+  "export": {
+    "title": "Ekspor",
+    "subtitle": "Unduh laporan stok dan keuangan ke Excel atau PDF.",
+    "reports": {
+      "onHand": {
+        "title": "Stok on hand",
+        "desc": "Saldo per bin, SKU, dan batch saat ini."
+      },
+      "card": {
+        "title": "Kartu stok",
+        "desc": "Saldo awal, masuk, keluar, dan saldo berjalan satu SKU."
+      },
+      "movements": {
+        "title": "Log mutasi",
+        "desc": "Semua perpindahan stok di rentang tanggal."
+      },
+      "valuation": {
+        "title": "Valuasi stok",
+        "desc": "Qty, harga satuan, dan nilai per tanggal."
+      },
+      "cogs": {
+        "title": "HPP",
+        "desc": "Harga pokok barang keluar, FIFO dan rata-rata."
+      },
+      "opname": {
+        "title": "Hasil opname",
+        "desc": "Qty sistem, hasil hitung, dan selisih satu sesi."
+      }
+    },
+    "cols": {
+      "warehouse": "Gudang",
+      "location": "Lokasi",
+      "sku": "SKU",
+      "product": "Barang",
+      "batch": "Batch",
+      "expiry": "Kedaluwarsa",
+      "onHand": "On hand",
+      "reserved": "Dipesan",
+      "date": "Tanggal",
+      "type": "Jenis",
+      "ref": "Dokumen",
+      "from": "Dari",
+      "to": "Ke",
+      "in": "Masuk",
+      "out": "Keluar",
+      "balance": "Saldo",
+      "qty": "Qty",
+      "user": "Oleh",
+      "category": "Kategori",
+      "owner": "Pemilik",
+      "unitCost": "Harga satuan",
+      "value": "Nilai",
+      "kind": "Jenis",
+      "fifo": "FIFO",
+      "average": "Rata-rata",
+      "system": "Sistem",
+      "counted": "Dihitung",
+      "variance": "Selisih",
+      "varianceValue": "Nilai selisih"
+    },
+    "allWarehouses": "Semua gudang",
+    "emptyReport": "Laporan kosong untuk pilihan ini",
+    "warehouseNote": "Gudang: {{name}} (ubah di header).",
+    "pickCount": "Pilih sesi opname",
+    "noCounts": "Belum ada opname yang disetujui."
+  },
+  "integration": {
+    "tabs": {
+      "keys": "API key",
+      "webhooks": "Webhook",
+      "users": "Pengguna & akses"
+    },
+    "secretOnce": "Salin sekarang. Nilai ini hanya ditampilkan sekali dan tidak bisa dilihat lagi.",
+    "copy": "Salin",
+    "stored": "Sudah saya simpan",
+    "keys": {
+      "title": "API key",
+      "subtitle": "Akses server ke server untuk stok, produk, dan order.",
+      "new": "API key baru",
+      "empty": "Belum ada API key",
+      "status": {
+        "active": "Aktif",
+        "revoked": "Dicabut",
+        "expired": "Kedaluwarsa"
+      },
+      "lastUsed": "terakhir dipakai",
+      "expires": "Berlaku sampai",
+      "revoke": "Cabut",
+      "howTo": "Cara memakai API",
+      "howToNote": "Batas 60 request per menit per key. POST /orders wajib header Idempotency-Key; request ulang dengan key yang sama mendapat jawaban pertama.",
+      "name": "Nama",
+      "scopes": "Akses",
+      "scopeDesc": {
+        "stock_read": "baca stok",
+        "products_read": "baca produk",
+        "orders_write": "buat sales order"
+      },
+      "owner": "Batasi ke pemilik",
+      "allOwners": "Semua pemilik",
+      "create": "Buat key",
+      "created": "API key baru",
+      "revokeTitle": "Cabut {{name}}?",
+      "revokeBody": "Sistem yang memakai key ini langsung ditolak. Tidak bisa dibatalkan."
+    },
+    "hooks": {
+      "title": "Webhook",
+      "subtitle": "Kirim kejadian stok ke sistem lain, ditandatangani HMAC.",
+      "new": "Webhook baru",
+      "empty": "Belum ada webhook",
+      "autoDisabled": "Dimatikan otomatis setelah 20 pengiriman gagal berturut-turut.",
+      "active": "Aktif",
+      "history": "Riwayat pengiriman",
+      "rotate": "Ganti secret",
+      "verifyTitle": "Cara memverifikasi",
+      "verifyBody": "Hitung HMAC-SHA256 dari t + \".\" + body mentah dengan secret, bandingkan dengan v1, dan tolak jika t lebih dari 5 menit.",
+      "urlHint": "Wajib https dan alamat publik.",
+      "events": "Kejadian",
+      "create": "Buat webhook",
+      "secretTitle": "Secret webhook",
+      "deleteTitle": "Hapus webhook ini?",
+      "noDeliveries": "Belum ada pengiriman",
+      "status": {
+        "pending": "Menunggu",
+        "success": "Terkirim",
+        "failed": "Gagal"
+      },
+      "attempts": "{{count}} percobaan",
+      "retry": "Kirim ulang"
+    },
+    "users": {
+      "title": "Pengguna & akses",
+      "subtitle": "Undang, atur role, dan beri pengecualian akses per orang.",
+      "invite": "Undang pengguna",
+      "search": "Cari nama atau email...",
+      "inactive": "Nonaktif",
+      "noRole": "Tanpa role",
+      "role": "Role {{name}}",
+      "permissions": "Atur akses",
+      "reactivate": "Aktifkan lagi",
+      "deactivate": "Nonaktifkan",
+      "fields": {
+        "full_name": "Nama lengkap",
+        "email": "Email",
+        "password": "Password awal",
+        "role": "Role"
+      },
+      "passwordRule": "Minimal 8 karakter, ada huruf besar, huruf kecil, dan angka.",
+      "pickRole": "Pilih role",
+      "create": "Buat akun",
+      "reactivateTitle": "Aktifkan lagi {{name}}?",
+      "deactivateTitle": "Nonaktifkan {{name}}?",
+      "reactivateBody": "Pengguna bisa login lagi dengan akses sesuai role-nya.",
+      "deactivateBody": "Pengguna langsung keluar dan tidak bisa login. Datanya tetap ada.",
+      "permHint": "Role: {{role}}. Nyalakan pengecualian untuk mengubah akses satu fitur. Tersimpan otomatis, berlaku saat halaman dimuat ulang.",
+      "custom": "Khusus",
+      "roleDefault": "Ikut role"
+    }
+  },
+  "superadmin": {
+    "tabs": {
+      "stats": "Statistik",
+      "monitor": "Monitor",
+      "maintenance": "Pemeliharaan"
+    },
+    "refresh": "Muat ulang",
+    "activity": "Aktivitas 7 hari",
+    "accounts": "Akun",
+    "banned": "diblokir",
+    "never": "belum pernah login",
+    "recentAudit": "Audit terbaru",
+    "system": "sistem",
+    "monitor": {
+      "failed_logins": "Gagal login 7 hari (laporan browser)",
+      "inactive_accounts": "Akun tidak aktif > 30 hari",
+      "access_changes": "Perubahan akses",
+      "api_keys": "API key mendekati limit / dipakai setelah dicabut",
+      "webhooks": "Webhook gagal atau nonaktif",
+      "storage": "Ukuran storage",
+      "errors": "Error terbaru"
+    },
+    "nothing": "Tidak ada",
+    "maintenanceHint": "Mode saat ini: {{mode}}. Semua aksi di sini tidak bisa dibatalkan.",
+    "seedTitle": "Isi ulang data demo",
+    "seedBody": "Menghapus semua data lalu membuat ulang perusahaan demo: akun, gudang, produk, dan transaksi 6 bulan. Akun superadmin tetap.",
+    "seed": "Isi ulang demo",
+    "wipeTitle": "Hapus semua data",
+    "wipeBody": "Menghapus semua data transaksi dan master serta semua akun kecuali superadmin dan admin@stockdesk.com.",
+    "wipe": "Hapus semua",
+    "typeToConfirm": "Ketik {{word}} untuk melanjutkan.",
+    "confirmWord": "Ketik {{word}}",
+    "running": "Sedang berjalan...",
+    "seeded": "Data demo sedang dibuat ulang di latar belakang. Muat ulang halaman sekitar satu menit lagi.",
+    "wiped": "Semua data dihapus",
+    "movements": "Mutasi stok",
+    "auditEvents": "Audit"
+  },
+  "forgotPassword": {
+    "title": "Lupa kata sandi?",
+    "subtitle": "Masukkan email akunmu, kami kirim tautan untuk membuat kata sandi baru.",
+    "send": "Kirim tautan reset",
+    "sending": "Mengirim...",
+    "sent": "Cek kotak masukmu",
+    "sentBody": "Tautan reset sudah dikirim ke {{email}}. Bisa butuh semenit; cek juga folder spam.",
+    "resend": "Pakai email lain",
+    "backToLogin": "Kembali ke login"
+  }
+}

@@ -1,0 +1,451 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 5% 97.5%;
+    --foreground: 240 10% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 10%;
+
+    --primary: 212 85% 48%;
+    --primary-foreground: 0 0% 100%;
+    --accent-2: 199 89% 48%;
+    --sea: 212 85% 48%; /* primary's hue: page tints stay blue, not teal */
+
+    --secondary: 240 5% 94%;
+    --secondary-foreground: 240 6% 26%;
+
+    --muted: 240 5% 93%;
+    --muted-foreground: 240 4% 44%;
+
+    --accent: 240 5% 93%;
+    --accent-foreground: 240 10% 10%;
+
+    /* Segmented control track: must contrast with both page background and white cards. */
+    --segment: 240 5% 93.5%;
+
+    --destructive: 347 77% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 44%;
+    --warning-foreground: 240 6% 4%;
+
+    --border: 240 6% 89%;
+    --input: 240 6% 86%;
+    --ring: 212 85% 48%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 240 6% 26%;
+    --sidebar-primary: 212 85% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 5% 95%;
+    --sidebar-accent-foreground: 240 10% 10%;
+    --sidebar-border: 240 6% 89%;
+    --sidebar-ring: 212 85% 48%;
+
+    --glass-bg: 0 0% 100%;
+    --glass-border: 240 6% 89%;
+    --brand: 212 85% 48%;
+    --amber: 38 92% 44%;
+    --emerald: 160 84% 39%;
+    --rose: 347 77% 50%;
+    --sky: 199 89% 48%;
+    --shadow: 240 10% 20%;
+    --shadow-strength: 0.08;
+    --zinc-950: 240 10% 10%;
+    --zinc-900: 240 8% 16%;
+    --zinc-800: 240 6% 24%;
+    --zinc-700: 240 5% 34%;
+    --zinc-600: 240 4% 46%;
+    --zinc-500: 240 4% 58%;
+    --zinc-400: 240 5% 70%;
+    --zinc-300: 240 5% 80%;
+    --zinc-200: 240 6% 89%;
+    --zinc-100: 240 5% 95%;
+  }
+
+  .dark {
+    --background: 240 6% 4%;
+    --foreground: 240 5% 96%;
+
+    --card: 240 5% 8%;
+    --card-foreground: 240 5% 96%;
+
+    --popover: 240 5% 8%;
+    --popover-foreground: 240 5% 96%;
+
+    --primary: 210 90% 60%;
+    --primary-foreground: 222 47% 11%;
+    --accent-2: 199 89% 58%;
+    --sea: 210 90% 60%;
+
+    --secondary: 240 4% 14%;
+    --secondary-foreground: 240 5% 86%;
+
+    --muted: 240 4% 12%;
+    --muted-foreground: 240 4% 52%;
+
+    --accent: 240 4% 14%;
+    --accent-foreground: 240 5% 96%;
+
+    --segment: 240 4% 14%;
+
+    --destructive: 350 89% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 240 6% 4%;
+
+    --border: 240 4% 16%;
+    --input: 240 4% 16%;
+    --ring: 210 90% 60%;
+
+    --radius: 0.625rem;
+
+    --sidebar-background: 240 6% 6%;
+    --sidebar-foreground: 240 5% 80%;
+    --sidebar-primary: 210 90% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 240 4% 12%;
+    --sidebar-accent-foreground: 240 5% 96%;
+    --sidebar-border: 240 4% 12%;
+    --sidebar-ring: 210 90% 60%;
+
+    --glass-bg: 240 5% 8%;
+    --glass-border: 240 4% 20%;
+    --brand: 210 90% 60%;
+    --amber: 38 92% 50%;
+    --emerald: 158 64% 52%;
+    --rose: 350 89% 60%;
+    --sky: 198 93% 60%;
+    --shadow: 0 0% 0%;
+    --shadow-strength: 0.4;
+    --zinc-950: 240 6% 4%;
+    --zinc-900: 240 5% 8%;
+    --zinc-800: 240 4% 16%;
+    --zinc-700: 240 4% 24%;
+    --zinc-600: 240 4% 36%;
+    --zinc-500: 240 4% 46%;
+    --zinc-400: 240 4% 58%;
+    --zinc-300: 240 5% 72%;
+    --zinc-200: 240 5% 86%;
+    --zinc-100: 240 5% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family:
+      "Inter",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Keep browser autofill from overriding input styles. */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    -webkit-text-fill-color: hsl(var(--foreground));
+    caret-color: hsl(var(--foreground));
+    transition: background-color 99999s ease-in-out 0s;
+  }
+}
+
+/* Light mode: gray bg-secondary fields read as disabled, so render them white.
+   Kept outside @layer: Tailwind would otherwise treat .bg-secondary here as a
+   utility and emit broken variant selectors for it. */
+html:not(.dark) :is(input, textarea, [role="combobox"], button[aria-haspopup]).bg-secondary:not(:disabled) {
+  background-color: hsl(var(--card));
+  border-color: hsl(var(--input));
+}
+html:not(.dark) button[aria-haspopup].bg-secondary:not(:disabled):hover {
+  background-color: hsl(var(--secondary) / 0.6);
+}
+
+/* Phones: shrinking root font-size scales every rem-based size at once. */
+@media (max-width: 639px) {
+  html {
+    font-size: 15px;
+  }
+  /* Match h-9/h-10 buttons and fields to h-8; element+class beats the bare utility. */
+  :is(button, input, a).h-9,
+  :is(button, input, a).h-10 {
+    height: 2rem;
+  }
+  /* Tighter table cells so text columns get the width instead of gutters. */
+  :is(th, td):is(.px-3, .px-4) {
+    padding-inline: 0.5rem;
+  }
+  :is(th, td):is(.py-2\.5, .py-3) {
+    padding-block: 0.5rem;
+  }
+  :is(th, td):is(.px-3, .px-4):first-child {
+    padding-left: 0.75rem;
+  }
+  :is(th, td):is(.px-3, .px-4):last-child {
+    padding-right: 0.75rem;
+  }
+}
+
+/* Touch screens: 36px minimum hit area for icon-only buttons.
+   Pointer-based so a narrow desktop window keeps the compact look. */
+@media (pointer: coarse) {
+  button:is(.p-0\.5, .p-1, .p-1\.5):has(> svg:only-child):not(.hidden) {
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+@layer utilities {
+  .bg-app-gradient {
+    background:
+      radial-gradient(60% 55% at 88% 0%, hsl(203 95% 70% / 0.55), transparent 70%),
+      radial-gradient(45% 40% at 12% 0%, hsl(214 95% 78% / 0.45), transparent 70%),
+      radial-gradient(70% 50% at 50% 115%, hsl(208 90% 84% / 0.5), transparent 70%),
+      linear-gradient(180deg, hsl(208 90% 91%), hsl(210 70% 95.5%) 40%, hsl(214 45% 97.5%));
+  }
+  .dark .bg-app-gradient {
+    background:
+      radial-gradient(60% 55% at 88% 0%, hsl(210 90% 50% / 0.22), transparent 70%),
+      radial-gradient(45% 40% at 12% 0%, hsl(200 90% 45% / 0.12), transparent 70%),
+      linear-gradient(180deg, hsl(222 40% 9%), hsl(240 6% 4%) 60%);
+  }
+
+  .glass {
+    background: hsl(var(--glass-bg) / 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--glass-border) / 0.6);
+  }
+
+  .glass-card {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid hsl(var(--border));
+  }
+
+  .glow-brand {
+    box-shadow:
+      0 0 20px hsl(var(--brand) / 0.15),
+      0 0 40px hsl(var(--brand) / 0.05);
+  }
+
+  .glow-amber {
+    box-shadow:
+      0 0 20px hsl(var(--amber) / 0.15),
+      0 0 40px hsl(var(--amber) / 0.05);
+  }
+
+  .text-gradient-brand {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent-2)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--border)) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 2px;
+  }
+}
+
+@keyframes gradient-shift {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+/* Theme the driver.js tour; its default light popover clashes with dark mode. */
+.driver-popover {
+  background: hsl(var(--popover));
+  color: hsl(var(--popover-foreground));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius);
+  box-shadow: 0 8px 24px hsl(var(--zinc-950) / 0.25);
+}
+.driver-popover-title {
+  color: hsl(var(--foreground));
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.driver-popover-description {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.75rem;
+}
+.driver-popover-progress-text {
+  color: hsl(var(--muted-foreground));
+  font-size: 0.6875rem;
+}
+.driver-popover-footer button {
+  background: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+  border: 1px solid hsl(var(--border));
+  text-shadow: none;
+  font-size: 0.75rem;
+  border-radius: calc(var(--radius) - 4px);
+}
+.driver-popover-footer button:hover,
+.driver-popover-footer button:focus {
+  background: hsl(var(--muted));
+}
+.driver-popover-footer .driver-popover-next-btn:hover,
+.driver-popover-footer .driver-popover-next-btn:focus {
+  background: hsl(var(--primary) / 0.9);
+}
+.driver-popover-close-btn:hover,
+.driver-popover-close-btn:focus {
+  color: hsl(var(--foreground));
+}
+.driver-popover-footer .driver-popover-next-btn {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-color: hsl(var(--primary));
+}
+.driver-popover-close-btn {
+  color: hsl(var(--muted-foreground));
+}
+/* The arrow is a border-triangle and can't take a border: outline it with drop-shadows
+   and pull it 1px into the popover so its fill hides the popover border. */
+.driver-popover .driver-popover-arrow {
+  border-width: 8px;
+  filter: drop-shadow(1px 0 0 hsl(var(--border)))
+    drop-shadow(-1px 0 0 hsl(var(--border)))
+    drop-shadow(0 1px 0 hsl(var(--border)))
+    drop-shadow(0 -1px 0 hsl(var(--border)));
+}
+/* Set color per side, not via shorthand: painting all four sides turns the arrow into a diamond. */
+.driver-popover-arrow-side-left {
+  border-left-color: hsl(var(--popover));
+  left: calc(100% - 1px);
+}
+.driver-popover-arrow-side-right {
+  border-right-color: hsl(var(--popover));
+  right: calc(100% - 1px);
+}
+.driver-popover-arrow-side-top {
+  border-top-color: hsl(var(--popover));
+  top: calc(100% - 1px);
+}
+.driver-popover-arrow-side-bottom {
+  border-bottom-color: hsl(var(--popover));
+  bottom: calc(100% - 1px);
+}
+.driver-active-element {
+  border-radius: calc(var(--radius) - 2px);
+}
+/* driver.js recreates the popover each step; slide it in from the arrow side so it reads as moving.
+   The `body` prefix beats driver.css's `.driver-fade .driver-popover` regardless of load order. */
+@keyframes tour-popover-enter-from-left {
+  from { opacity: 0; transform: translateX(-14px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes tour-popover-enter-from-right {
+  from { opacity: 0; transform: translateX(14px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes tour-popover-enter-from-top {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes tour-popover-enter-from-bottom {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+body.driver-fade .driver-popover:has(.driver-popover-arrow-side-left) {
+  animation: tour-popover-enter-from-left var(--driver-animation-duration, 0.4s) ease-out;
+}
+body.driver-fade .driver-popover:has(.driver-popover-arrow-side-right) {
+  animation: tour-popover-enter-from-right var(--driver-animation-duration, 0.4s) ease-out;
+}
+body.driver-fade .driver-popover:has(.driver-popover-arrow-side-top) {
+  animation: tour-popover-enter-from-top var(--driver-animation-duration, 0.4s) ease-out;
+}
+body.driver-fade .driver-popover:has(.driver-popover-arrow-side-bottom) {
+  animation: tour-popover-enter-from-bottom var(--driver-animation-duration, 0.4s) ease-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--zinc-600));
+}
