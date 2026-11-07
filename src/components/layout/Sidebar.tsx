@@ -136,6 +136,13 @@ export function Sidebar({ collapsed = false, onToggleCollapsed }: { collapsed?: 
             <p className="text-[10px] text-muted-foreground mt-0.5">
               {t("app.version")}
             </p>
+            <p className="text-[10px] text-muted-foreground">
+              &copy; {new Date().getFullYear()}{" "}
+              <a href="https://mujahidin.my.id" target="_blank" rel="noreferrer" className="hover:text-foreground hover:underline">
+                Mujahidin
+              </a>
+              . {t("app.rights")}
+            </p>
           </div>
         </div>
       )}

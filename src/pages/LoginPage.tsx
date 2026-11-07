@@ -40,6 +40,7 @@ function GoogleIcon({ className }: { className?: string }) {
 }
 
 // Public on the demo deployment only (public_demo_mode()); the seed locks their credentials.
+const DEMO_PASSWORD = "Demo123!";
 const DEMO_ACCOUNTS = [
   { role: "admin", email: "rina@stockdesk.demo" },
   { role: "manager", email: "budi@stockdesk.demo" },
@@ -218,23 +219,27 @@ export default function LoginPage() {
         <div data-testid="demo-accounts" className="mt-6 rounded-xl border border-border p-3">
           <p className="text-xs font-semibold">{t("login.demoTitle")}</p>
           <p className="mb-2 text-xs text-muted-foreground">{t("login.demoHint")}</p>
-          <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-3 md:grid-cols-1 lg:grid-cols-3">
+          <div className="flex flex-col gap-1.5">
             {DEMO_ACCOUNTS.map((a) => (
               <Button
                 key={a.email}
                 type="button"
                 variant="secondary"
-                className="h-auto min-w-0 flex-col items-start gap-0 px-3 py-2 text-left"
+                className="h-auto w-full min-w-0 justify-between gap-3 px-3 py-2 text-left"
                 onClick={() => {
                   setEmail(a.email);
-                  setPassword("Demo123!");
+                  setPassword(DEMO_PASSWORD);
                 }}
               >
-                <span className="w-full truncate text-xs font-semibold">{t(`login.demoRoles.${a.role}`)}</span>
-                <span className="w-full truncate text-[11px] font-normal text-muted-foreground">{a.email}</span>
+                <span className="shrink-0 text-xs font-semibold">{t(`login.demoRoles.${a.role}`)}</span>
+                <span className="min-w-0 break-all text-right font-mono text-[11px] font-normal text-muted-foreground">{a.email}</span>
               </Button>
             ))}
           </div>
+          <p className="mt-2 flex items-center justify-between text-xs">
+            <span className="text-muted-foreground">{t("login.demoPassword")}</span>
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono font-semibold">{DEMO_PASSWORD}</code>
+          </p>
         </div>
       )}
     </AuthLayout>

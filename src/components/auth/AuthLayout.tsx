@@ -93,6 +93,13 @@ export function AuthLayout({ children }: { children: ReactNode }) {
           <div className="flex-1 flex items-start md:items-center md:py-10">
             <div className="w-full max-w-sm mx-auto">{children}</div>
           </div>
+          <p className="text-center text-xs text-muted-foreground">
+            &copy; {new Date().getFullYear()} {t("app.name")} by{" "}
+            <a href="https://mujahidin.my.id" target="_blank" rel="noreferrer" className="font-medium hover:text-foreground hover:underline">
+              Mujahidin
+            </a>
+            . {t("app.rights")}
+          </p>
         </section>
 
         <aside
@@ -107,7 +114,7 @@ export function AuthLayout({ children }: { children: ReactNode }) {
             <p className="hidden md:block text-sm text-white/80">{t("login.heroBody")}</p>
           </div>
           {/* Tilted device frame around a real dashboard capture. */}
-          <div className="absolute -right-36 -bottom-28 w-[300px] rounded-2xl p-2 md:-right-40 md:-bottom-40 md:w-[600px] md:rounded-[2rem] md:p-3 rotate-[16deg] bg-slate-900 shadow-[0_40px_80px_-20px_rgb(0_0_0/.6)]">
+          <div className="absolute -right-36 -bottom-20 w-[300px] rounded-2xl p-2 md:-right-40 md:-bottom-28 md:w-[600px] md:rounded-[2rem] md:p-3 rotate-[16deg] bg-slate-900 shadow-[0_40px_80px_-20px_rgb(0_0_0/.6)]">
             <img
               src="/auth-preview.webp"
               alt=""

@@ -17,6 +17,8 @@ import { NotificationBell } from "./NotificationBell";
 import { WarehouseSwitcher } from "./WarehouseSwitcher";
 import { CommandPalette } from "./CommandPalette";
 import { SignOutConfirmModal } from "./SignOutConfirmModal";
+import { AiProvider } from "@/components/ai/AiProvider";
+import { CommandPanel } from "@/components/ai/CommandPanel";
 import { useTheme } from "@/context/theme";
 import { useAuth } from "@/context/auth";
 import { useNavGroups } from "@/lib/navigation";
@@ -42,6 +44,15 @@ function readCollapsed() {
 }
 
 export function AppShell() {
+  return (
+    <AiProvider>
+      <AppShellBody />
+      <CommandPanel />
+    </AiProvider>
+  );
+}
+
+function AppShellBody() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [collapsed, setCollapsed] = useState(readCollapsed);
   const toggleCollapsed = () =>

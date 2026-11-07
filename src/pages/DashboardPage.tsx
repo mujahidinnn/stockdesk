@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { AlertTriangle, ArrowDownToLine, CalendarClock, ClipboardCheck, ListChecks, Package, PackageX, Receipt, Truck, Wallet } from "lucide-react";
+import { CommandBar } from "@/components/ai/CommandBar";
 import { StatsCard } from "@/components/dashboard/StatsCard";
 import { ValuationTrendChart } from "@/components/dashboard/ValuationTrendChart";
 import { FastSlowMovingChart } from "@/components/dashboard/FastSlowMovingChart";
@@ -32,6 +33,8 @@ export default function DashboardPage() {
 
   return (
     <div className="flex flex-col gap-4">
+      <CommandBar />
+
       <div data-tour="dashboard-stats" className="grid auto-rows-fr grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         {money && <StatsCard label={t("dashboard.assetValue")} value={rupiah(Number(s.asset_value))} icon={Wallet} to={canRead("valuation") ? "/valuation" : undefined} />}
         {money && (

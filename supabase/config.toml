@@ -22,6 +22,9 @@ verify_jwt = false
 [functions.webhook-dispatch]
 verify_jwt = false
 
+[functions.ai-command]
+verify_jwt = true
+
 # Accounts are only created by an Admin (create-user) or seed-admin. Google
 # sign-in only reaches accounts that already exist; a stray one still gets a
 # profile without a role (handle_new_user), so it reaches nothing.

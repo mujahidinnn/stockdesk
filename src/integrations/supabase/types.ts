@@ -861,6 +861,34 @@ export type Database = {
           },
         ];
       };
+      t_ai_conversations: {
+        Row: { created_at: string; id: number; title: string | null; updated_at: string; user_id: string };
+        Insert: { created_at?: string; id?: never; title?: string | null; updated_at?: string; user_id: string };
+        Update: { created_at?: string; id?: never; title?: string | null; updated_at?: string; user_id?: string };
+        Relationships: [
+          {
+            foreignKeyName: "t_ai_conversations_user_id_fkey";
+            columns: ["user_id"];
+            isOneToOne: false;
+            referencedRelation: "profiles";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
+      t_ai_messages: {
+        Row: { content: Json; conversation_id: number; created_at: string; id: number; role: string };
+        Insert: { content: Json; conversation_id: number; created_at?: string; id?: never; role: string };
+        Update: { content?: Json; conversation_id?: number; created_at?: string; id?: never; role?: string };
+        Relationships: [
+          {
+            foreignKeyName: "t_ai_messages_conversation_id_fkey";
+            columns: ["conversation_id"];
+            isOneToOne: false;
+            referencedRelation: "t_ai_conversations";
+            referencedColumns: ["id"];
+          },
+        ];
+      };
       t_api_keys: {
         Row: {
           created_at: string;
@@ -3225,6 +3253,7 @@ export type Database = {
         Args: { p_costs: Json; p_receipt_id: number };
         Returns: undefined;
       };
+      ai_quota_today: { Args: Record<PropertyKey, never>; Returns: Json };
       sidebar_counts: { Args: { p_warehouse_id?: number }; Returns: Json };
       snapshot_stock_value: { Args: { p_date?: string }; Returns: undefined };
       start_stock_count: { Args: { p_id: number }; Returns: undefined };

@@ -3,7 +3,8 @@
     "name": "StockDesk",
     "tagline": "Inventory & WMS",
     "version": "v0.1.0 · 2026",
-    "footer": "Warehouse Management System"
+    "footer": "Warehouse Management System",
+    "rights": "All rights reserved."
   },
   "nav": {
     "groups": {
@@ -173,7 +174,8 @@
     "heroTitle": "Every unit counted,\nevery bin in control.",
     "heroBody": "Receive, store, pick and ship with every unit accounted for, across every warehouse and bin.",
     "demoTitle": "Demo accounts",
-    "demoHint": "Pick a role to fill in the email and password (Demo123!).",
+    "demoHint": "Click to fill in automatically, or type the email and password below by hand.",
+    "demoPassword": "Password (same for all)",
     "demoRoles": {
       "admin": "Admin",
       "manager": "Warehouse manager",
@@ -916,6 +918,8 @@
   },
   "scanner": {
     "camera": "Scan with camera",
+    "upload": "Upload an image",
+    "notFound": "No barcode found in that image. Try a sharper photo.",
     "placeholder": "Scan or type a code, then Enter",
     "unknown": "Unknown code {{code}}",
     "unsupported": "This browser cannot scan with the camera. Use a scanner or type the code."
@@ -1685,5 +1689,46 @@
     "sentBody": "We sent a reset link to {{email}}. It can take a minute; check spam too.",
     "resend": "Use another email",
     "backToLogin": "Back to sign in"
+  },
+  "ai": {
+    "title": "AI assistant",
+    "description": "Ask about stock, orders and warehouse work.",
+    "placeholder": "Ask about stock, e.g. \"how much SKU-001 is left in the main warehouse?\"",
+    "notConfigured": "AI is not enabled yet",
+    "send": "Send",
+    "stop": "Stop",
+    "thinking": "Working on it...",
+    "newChat": "New chat",
+    "historyChip": "History",
+    "newConversation": "New conversation",
+    "history": "History",
+    "noHistory": "No conversations yet",
+    "untitled": "Untitled",
+    "deleteConversation": "Delete conversation",
+    "deleteConversationDesc": "Delete \"{{title}}\"? This cannot be undone.",
+    "empty": "Ask about stock levels, open orders, receipts, transfers or counts. I can read data and point you to the right page, but I cannot change anything.",
+    "retentionNote": "History is kept for 30 days. Answers come from Gemini free tier; do not enter sensitive data.",
+    "quick": {
+      "more": "More",
+      "belowReorder": "Below reorder point",
+      "belowReorderPrompt": "Which SKUs are below their reorder point?",
+      "expiring": "Expiring soon",
+      "expiringPrompt": "Which batches expire soon?",
+      "workQueue": "Open work",
+      "workQueuePrompt": "What work is open right now: putaway, picking, dispatch, transfers and counts?",
+      "stockOf": "Stock of a SKU",
+      "stockOfPrompt": "How much stock is left of "
+    },
+    "error": {
+      "invalid": "The request was not valid.",
+      "too_long": "The prompt is too long (max 2000 characters).",
+      "quota": "Daily AI limit reached ({{limit}} prompts). It resets at 00:00 WIB.",
+      "not_configured": "AI is not enabled yet.",
+      "model_busy": "AI is busy, try again later.",
+      "blocked": "This request cannot be processed.",
+      "timeout": "Took too long, try again.",
+      "aborted": "Stopped.",
+      "unknown": "Something went wrong, try again."
+    }
   }
 }

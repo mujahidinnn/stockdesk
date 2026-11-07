@@ -62,6 +62,12 @@ receipts, locations, picking, counts and value in one place.
 - Users and access with per-user overrides, superadmin monitor, demo seed and wipe
 - Indonesian and English, light and dark, guided tours per page
 
+**AI assistant**
+
+- Prompt bar on the Dashboard with a side panel: ask about stock, orders, receipts, transfers and counts in plain language
+- Read-only: it queries with the user's own session (RLS and permissions apply) and points to the right page with a button, it never changes stock
+- Gemini free tier, 30 prompts per user per day (`m_ai_settings.daily_limit`), history kept 30 days. Demo data only, do not enter sensitive data
+
 ## Roles
 
 | Role              | What they can do                                                             |
@@ -112,7 +118,9 @@ pnpm dev                # http://localhost:8080
 Apply `supabase/migrations/` to your project, then create your login in the
 SQL editor with `select superadmin_bootstrap('you@example.com', 'a-strong-password');`.
 For a demo company, run `select superadmin_seed_demo_data();` or use
-Superadmin > Maintenance. `GUIDELINE.md` explains the code layout, the
+Superadmin > Maintenance. For the AI assistant deploy the `ai-command` function and set
+the secrets `GEMINI_API_KEY` and `GEMINI_MODEL` (comma separated list, first one preferred);
+without them the prompt bar shows "AI is not enabled yet". `GUIDELINE.md` explains the code layout, the
 database rules, cron and deployment.
 
 ## Demo accounts

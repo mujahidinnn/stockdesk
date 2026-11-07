@@ -56,6 +56,7 @@ all read one route list, `lib/navigation.ts`.
 | Superadmin | `SuperadminPage.tsx` (hidden, `is_superadmin` only) | - (RPCs called in the page) | `components/superadmin/` |
 | Auth | `LoginPage.tsx` (demo accounts when `public_demo_mode()`), `ResetPasswordPage.tsx` | `context/auth` | `components/auth/` |
 | Profile, guide | `ProfileSettingsPage.tsx`, `GuidePage.tsx` (per-feature help, workflows by role, tour replay) | `usePermissions` | `components/layout/` |
+| AI assistant | Dashboard (`CommandBar`), panel mounted in `AppShell` | `useAi` | `components/ai/`, `supabase/functions/ai-command` + `_shared/ai*.ts` (tool catalog shared with the browser) |
 | Errors | `ForbiddenPage.tsx`, `NotFound.tsx` | - | - |
 
 Tours: steps in `lib/tours.ts` (keyed by feature key, targets `data-tour`),

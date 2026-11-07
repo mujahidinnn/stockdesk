@@ -3,7 +3,8 @@
     "name": "StockDesk",
     "tagline": "Inventory & WMS",
     "version": "v0.1.0 · 2026",
-    "footer": "Sistem Manajemen Gudang"
+    "footer": "Sistem Manajemen Gudang",
+    "rights": "Hak cipta dilindungi."
   },
   "nav": {
     "groups": {
@@ -173,7 +174,8 @@
     "heroTitle": "Setiap unit tercatat,\nsetiap bin terkendali.",
     "heroBody": "Terima, simpan, ambil, dan kirim barang dengan setiap unit tercatat, di semua gudang dan bin.",
     "demoTitle": "Akun demo",
-    "demoHint": "Pilih peran untuk mengisi email dan password (Demo123!).",
+    "demoHint": "Klik untuk mengisi otomatis, atau ketik email dan password di bawah secara manual.",
+    "demoPassword": "Password (sama untuk semua)",
     "demoRoles": {
       "admin": "Admin",
       "manager": "Manajer gudang",
@@ -910,6 +912,8 @@
   },
   "scanner": {
     "camera": "Scan pakai kamera",
+    "upload": "Unggah gambar",
+    "notFound": "Barcode tidak ditemukan di gambar itu. Coba foto yang lebih tajam.",
     "placeholder": "Scan atau ketik kode, lalu Enter",
     "unknown": "Kode {{code}} tidak dikenal",
     "unsupported": "Browser ini belum mendukung scan kamera. Pakai scanner atau ketik kodenya."
@@ -1671,5 +1675,46 @@
     "sentBody": "Tautan reset sudah dikirim ke {{email}}. Bisa butuh semenit; cek juga folder spam.",
     "resend": "Pakai email lain",
     "backToLogin": "Kembali ke login"
+  },
+  "ai": {
+    "title": "Asisten AI",
+    "description": "Tanya soal stok, order, dan pekerjaan gudang.",
+    "placeholder": "Tanya soal stok, mis. \"sisa SKU-001 di gudang utama berapa?\"",
+    "notConfigured": "AI belum diaktifkan",
+    "send": "Kirim",
+    "stop": "Hentikan",
+    "thinking": "Sedang memproses...",
+    "newChat": "Percakapan baru",
+    "historyChip": "Riwayat",
+    "newConversation": "Percakapan baru",
+    "history": "Riwayat",
+    "noHistory": "Belum ada percakapan",
+    "untitled": "Tanpa judul",
+    "deleteConversation": "Hapus percakapan",
+    "deleteConversationDesc": "Hapus \"{{title}}\"? Tindakan ini tidak bisa dibatalkan.",
+    "empty": "Tanyakan stok, order terbuka, penerimaan, transfer, atau opname. Saya bisa membaca data dan mengarahkan ke halaman yang tepat, tetapi tidak bisa mengubah apa pun.",
+    "retentionNote": "Riwayat disimpan 30 hari. Jawaban memakai Gemini free tier; jangan masukkan data sensitif.",
+    "quick": {
+      "more": "Lainnya",
+      "belowReorder": "Di bawah reorder point",
+      "belowReorderPrompt": "SKU mana saja yang di bawah reorder point?",
+      "expiring": "Segera kedaluwarsa",
+      "expiringPrompt": "Batch mana yang segera kedaluwarsa?",
+      "workQueue": "Pekerjaan terbuka",
+      "workQueuePrompt": "Pekerjaan apa yang masih terbuka sekarang: putaway, picking, dispatch, transfer, dan opname?",
+      "stockOf": "Stok sebuah SKU",
+      "stockOfPrompt": "Berapa sisa stok "
+    },
+    "error": {
+      "invalid": "Permintaan tidak valid.",
+      "too_long": "Prompt terlalu panjang (maks 2000 karakter).",
+      "quota": "Batas AI harian tercapai ({{limit}} prompt). Reset pukul 00:00 WIB.",
+      "not_configured": "AI belum diaktifkan.",
+      "model_busy": "AI sedang penuh, coba lagi nanti.",
+      "blocked": "Permintaan ini tidak bisa diproses.",
+      "timeout": "Terlalu lama, coba lagi.",
+      "aborted": "Dihentikan.",
+      "unknown": "Terjadi kesalahan, coba lagi."
+    }
   }
 }
