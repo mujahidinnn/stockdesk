@@ -69,3 +69,9 @@ export const supabase = createClient<Database>(
     },
   },
 );
+
+// A failed Google sign-in (code exchange, or an error in the redirect URL) only surfaces here,
+// then the router bounces to /login. LoginPage reads this to show the reason.
+export const authInitError: Promise<string | null> = supabase.auth
+  .initialize()
+  .then(({ error }) => error?.message ?? null);
